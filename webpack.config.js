@@ -27,7 +27,12 @@ const webpackConfig = {
                     {
                         loader: MiniCSSExtractPlugin.loader,
                     },
-                    'css-loader',
+                    {
+                        loader: 'css-loader',
+                        options: {
+                            importLoaders: 1
+                        }
+                    },
                     'less-loader',
                     'postcss-loader'
                 ]
@@ -54,6 +59,13 @@ const webpackConfig = {
                 },
             }
         ]
+    },
+    resolve:{
+        alias: {
+            "@components": resolve(__dirname, 'src/web/components'),
+            "@pages": resolve(__dirname, 'src/web/pages')
+        },
+        extensions: ['.tsx', '.ts', '.js']
     },
     optimization:{
         splitChunks:{

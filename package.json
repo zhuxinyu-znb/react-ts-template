@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "d": "bash publish.bat",
     "client:dev": "scripty",
     "client:prod": "scripty"
   },
@@ -36,6 +37,7 @@
     "babel-loader": "^8.0.6",
     "babel-plugin-import": "^1.12.2",
     "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^3.2.0",
     "friendly-errors-webpack-plugin": "^1.7.0",
     "html-webpack-plugin": "^3.2.0",
     "less": "^3.10.3",
