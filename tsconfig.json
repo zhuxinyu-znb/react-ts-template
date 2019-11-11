@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "jsx": "react",
+        "allowJs":true,
+        "module": "commonjs",
+        "lib":["es6", "dom"],
+        "baseUrl": "./src",
+        "paths":{
+            "@components/*": ["/web/components/*"],
+            "@pages/*": ["/web/pages/*"],
+        }
+    },
+    "include": [
+        "src",
+        "tests"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}
