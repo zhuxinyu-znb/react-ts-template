@@ -9,6 +9,9 @@
         "paths":{
             "@components/*": ["/web/components/*"],
             "@pages/*": ["/web/pages/*"],
+            "@assets/*": ["/web/assets/*"],
+            "@mocks/*": ["/web/mocks/*"],
+            "@store/*": ["/web/store/*"]
         }
     },
     "include": [

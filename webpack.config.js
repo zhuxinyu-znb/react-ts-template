@@ -63,7 +63,10 @@ const webpackConfig = {
     resolve:{
         alias: {
             "@components": resolve(__dirname, 'src/web/components'),
-            "@pages": resolve(__dirname, 'src/web/pages')
+            "@pages": resolve(__dirname, 'src/web/pages'),
+            "@assets": resolve(__dirname, 'src/web/assets'),
+            "@mocks": resolve(__dirname, 'src/web/mocks'),
+            "@store": resolve(__dirname, 'src/web/store'),
         },
         extensions: ['.tsx', '.ts', '.js']
     },
