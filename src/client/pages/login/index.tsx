@@ -3,19 +3,17 @@ import { Form, Icon, Input, Button, Checkbox } from "antd";
 import "./login.less";
 import { FormComponentProps } from "antd/es/form";
 
-
-
 interface UserFormProps extends FormComponentProps {
   age: number;
   name: string;
 }
 
 interface LoginMessage {
-    username:string,
-    password:string
+  username: string;
+  password: string;
 }
 
-const LoginForm:React.FC = (props: any) => {
+const LoginForm: React.FC = (props: any) => {
   const { getFieldDecorator, validateFields } = props.form;
   const handleSubmit = (): void => {
     validateFields((err: any, values: LoginMessage) => {

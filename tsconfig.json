@@ -1,24 +1,30 @@
 {
     "compilerOptions": {
-        "target": "es5",
-        "jsx": "react",
-        "allowJs":true,
-        "module": "commonjs",
-        "lib":["es6", "dom"],
-        "baseUrl": "./src",
-        "paths":{
-            "@components/*": ["/web/components/*"],
-            "@pages/*": ["/web/pages/*"],
-            "@assets/*": ["/web/assets/*"],
-            "@mocks/*": ["/web/mocks/*"],
-            "@store/*": ["/web/store/*"]
-        }
+      "allowJs": true,
+      "jsx": "react",
+      "target": "es5",
+      "lib": ["es6", "dom"],
+      "types": ["reflect-metadata", "jest", "node"],
+      "module": "commonjs",
+      "moduleResolution": "node",
+      "experimentalDecorators": true,
+      "emitDecoratorMetadata": true,
+      "baseUrl": "./src",
+      "outDir": "./dist",
+      "paths": {
+        "@components/*": ["client/components/*"],
+        "@utils/*": ["client/utils/*"],
+        "@assets/*": ["client/assets"],
+        "@models/*": ["client/models/*"],
+        "@pages/*": ["client/pages/*"],
+        "@stores/*": ["client/stores"],
+      }
     },
     "include": [
-        "src",
-        "tests"
+      "src",
+      "tests"
     ],
     "exclude": [
-        "node_modules"
+      "node_modules"
     ]
-}
+  }

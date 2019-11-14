@@ -1,11 +1,5 @@
 import * as React from "react";
-import {
-  BrowserRouter,
-  Switch,
-  Route,
-  RouteProps,
-  Redirect
-} from "react-router-dom";
+import { BrowserRouter, Switch, Route, RouteProps } from "react-router-dom";
 import routeConfig from "./routers";
 import Loading from "@components/Loading";
 const { Suspense } = React;
@@ -34,15 +28,11 @@ const createRoute = (routeConfig: YDProps[]) => {
 };
 
 const Router = () => (
-  <>
-    <BrowserRouter>
-      <Suspense fallback={Loading}>
-        <Switch>
-          {createRoute(routeConfig)}
-        </Switch>
-      </Suspense>
-    </BrowserRouter>
-  </>
+  <BrowserRouter>
+    <Suspense fallback={Loading}>
+      <Switch>{createRoute(routeConfig)}</Switch>
+    </Suspense>
+  </BrowserRouter>
 );
 
 export default Router;

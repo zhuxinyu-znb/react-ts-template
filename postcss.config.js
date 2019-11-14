@@ -8,7 +8,8 @@ module.exports = {
             ],
             stage: 0,
             features: {
-                'nesting-rules': true
+                'nesting-rules': true,
+                'autoprefixer': { grid: true }
             }
         }
     }
