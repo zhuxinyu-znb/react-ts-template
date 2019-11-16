@@ -18,7 +18,7 @@ const LoginForm: React.FC = (props: any) => {
   const handleSubmit = (): void => {
     validateFields((err: any, values: LoginMessage) => {
       if (!err) {
-        console.log("Received values of form: ", values);
+        console.log("Received values of form: ", res);
       }
     });
   };
@@ -57,7 +57,7 @@ const LoginForm: React.FC = (props: any) => {
             onClick={handleSubmit}
             className="login-form-button"
           >
-            Log in
+            登录
           </Button>
         </Form.Item>
       </Form>

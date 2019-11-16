@@ -21,19 +21,21 @@
   },
   "homepage": "https://github.com/zhuxinyu-znb/react-ts-template#readme",
   "dependencies": {
+    "add": "^2.0.6",
     "antd": "^3.25.1",
     "cross-env": "^6.0.3",
     "koa": "^2.11.0",
-    "koa-simple-router": "^0.2.0",
-    "lodash": "^4.17.15",
+    "mobx": "^5.15.0",
     "mobx-react-lite": "^1.5.0",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
     "react-router-dom": "^5.1.2",
-    "ts-node-dev": "^1.0.0-pre.44"
+    "ts-node-dev": "^1.0.0-pre.44",
+    "yarn": "^1.19.1"
   },
   "devDependencies": {
     "@babel/core": "^7.7.2",
+    "@babel/plugin-proposal-class-properties": "^7.7.0",
     "@babel/plugin-syntax-dynamic-import": "^7.2.0",
     "@babel/preset-env": "^7.7.1",
     "@babel/preset-react": "^7.7.0",

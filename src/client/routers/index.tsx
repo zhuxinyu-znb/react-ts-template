@@ -1,38 +1,70 @@
 import * as React from "react";
-import { BrowserRouter, Switch, Route, RouteProps } from "react-router-dom";
-import routeConfig from "./routers";
+import { Switch, Route, RouteProps } from "react-router-dom";
 import Loading from "@components/Loading";
-const { Suspense } = React;
+import Login from "@pages/login";
+import NoMatch from "@components/NoMatch";
+const { Suspense, lazy } = React;
+
+const Report = lazy(() =>
+  import(/* webpackChunkName: "report" */ "@pages/report")
+);
+const Home = lazy(() =>
+  import(/* webpackChunkName: "home" */ "@pages/home")
+);
+
 interface YDProps extends RouteProps {
   auth?: boolean;
 }
 
-const createRoute = (routeConfig: YDProps[]) => {
-  if (routeConfig.length === 0) {
-    return null;
+const routeConfig: YDProps[] = [
+  {
+    path: "/login",
+    exact: true,
+    component: Login
+  },
+  {
+    path: "/report",
+    exact: true,
+    component: Report
+  },
+  {
+    path: "/home",
+    exact: true,
+    component: Home
+  },
+  {
+    path: "/404",
+    component: NoMatch
   }
-  return routeConfig.map((r, i: number) => {
-    const { path, component, exact } = r;
-    const LazyCom = component;
-    return (
-      <Route
-        key={i}
-        exact={exact}
-        path={path}
-        render={props =>
-          r.auth ? <LazyCom {...props} /> : <LazyCom {...props} />
-        }
-      />
-    );
-  });
-};
+];
 
-const Router = () => (
-  <BrowserRouter>
-    <Suspense fallback={Loading}>
-      <Switch>{createRoute(routeConfig)}</Switch>
-    </Suspense>
-  </BrowserRouter>
+interface YDProps extends RouteProps {
+  auth?: boolean;
+}
+
+
+const generateRoutes = (routeConfig: YDProps[]) => store => (
+  <Suspense fallback={Loading}>
+    <Switch>{
+      routeConfig.map((r, i: number) => {
+        const { path, component, exact } = r;
+        const LazyCom = component;
+        return (
+          <Route
+            key={i}
+            exact={exact}
+            path={path}
+            render={props =>
+              r.auth ? <LazyCom {...props} store={store} /> : <LazyCom {...props}  store={store} />
+            }
+          />
+        );
+      })
+    }</Switch>
+  </Suspense>
 );
 
-export default Router;
+
+const Routes = generateRoutes(routeConfig);
+
+export default Routes;

@@ -1,1 +1,1 @@
-webpack-dev-server --mode development
+webpack-dev-server --hot --mode development

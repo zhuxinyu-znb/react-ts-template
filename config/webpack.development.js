@@ -2,6 +2,7 @@ const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin');/*
 const HtmlWebpackPlugin = require('html-webpack-plugin');/* ******************** 插入html*/
 const { resolve, join } = require('path')
 const Jarvis = require('webpack-jarvis')
+const webpack = require('webpack');
 
 module.exports = {
   devtool: 'eval-source-map',
@@ -20,6 +21,7 @@ module.exports = {
     historyApiFallback: true,
   },
   plugins: [
+    new webpack.HotModuleReplacementPlugin(),
     new Jarvis({ port: 1337 }),
     new HtmlWebpackPlugin({
       filename: 'index.html',

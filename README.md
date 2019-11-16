@@ -27,3 +27,20 @@
 + 写了几个简单的基本页。
 + 配置了antd 按需加载。
 + 准备使用 hooks + mobx-react-lite 进行逻辑开发，实现登录判断进行跳转。
+
+
+优化
+
+1. code-spliting + 异步路由
+
+提取公共包和业务包
+js.css图片
+压缩混淆
+
+home.tsx -> home.css
+index.tsx -> index.css
+
+提取css时，合并成一个css -> main.css
+
+2. 按需加载，通过分析工具，查看依赖
+或生成stats.json在网站上分析
