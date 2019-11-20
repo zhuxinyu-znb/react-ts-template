@@ -37,6 +37,8 @@ module.exports = {
         'jsx-a11y/no-noninteractive-element-interactions': 0,
         'no-restricted-syntax': 0,
         'guard-for-in': 0,
+        '@typescript-eslint/member-ordering':0,
+        '@typescript-eslint/explicit-member-accessibility':0,
         '@typescript-eslint/no-require-imports':0,
         'import/no-unresolved':0,
         // 禁止使用 var

@@ -60,12 +60,14 @@ const webpackConfig = {
                 test: /\.(js|jsx|ts|tsx)$/,
                 include: [resolve("src")],
                 exclude: /node_modules/,
-                use: {
-                    loader: 'babel-loader',
-                    options: {
-                        plugins: _isDev ? ['dynamic-import-node'] : []
-                    }
-                }
+                use: [
+                    {
+                        loader: 'babel-loader',
+                        options: {
+                            plugins: _isDev ? ['dynamic-import-node'] : []
+                        }
+                    },
+                    'eslint-loader']
             },
             {
                 test: /.svg$/,
