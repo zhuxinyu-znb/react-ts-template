@@ -6,6 +6,7 @@
     },
     "globals": {},
     "compilerOptions": {
+      "jsx": "react",
       "module": "commonjs",
       "moduleResolution": "node",
       "types": ["node"],
@@ -14,11 +15,20 @@
         "es6",
         "dom"
       ],
+      "baseUrl": "../",
+      "outDir": "./dist",
+      "paths": {
+        "@components/*": ["client/components/*"],
+        "@utils/*": ["client/utils/*"],
+        "@assets/*": ["client/assets"],
+        "@models/*": ["client/models/*"],
+        "@pages/*": ["client/pages/*"],
+        "@stores/*": ["client/stores"],
+      },
       "noImplicitAny": false,
       "sourceMap": false,
       "emitDecoratorMetadata": true,
       "experimentalDecorators": true,
-      "moduleResolution": "node",
       // "noUnusedLocals": true
     },
     "compileOnSave": false,

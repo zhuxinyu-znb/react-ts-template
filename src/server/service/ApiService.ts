@@ -1,8 +1,8 @@
 // import safeRequest from '../util/SafeRequest'
 import { IApi } from '../interface/IApi'
 
-export default class ApiService implements IIdex {
-  
+export default class ApiService implements IApi {
+  public safeRequest
   constructor({ safeRequest }) {
     this.safeRequest = safeRequest
   }

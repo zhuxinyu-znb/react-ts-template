@@ -15,7 +15,7 @@ export default class IndexController {
     ctx: Router.IRouterContext,
     next: () => Promise<any>
   ): Promise<any> {
-    console.log(1111);
+    ctx.body = await ctx.render("index");
     const result: User = await this.indexService.getUser("0");
     console.log(result.email);
     // ctx.body = await ctx.render("index", { data: result.email });

@@ -9,8 +9,8 @@ import ErrorBoundary from '@components/Error'
 import { observer } from 'mobx-react-lite';
 
 
-message.config({ duration: 2 })
-window.message = message;
+// message.config({ duration: 2 })
+// window.message = message;
 const { useContext } = React
 
 
@@ -25,7 +25,7 @@ const App = observer(() => {
   )
 })
 
-ReactDOM.render(<App />, document.getElementById("app"));
+ReactDOM.hydrate(<App />, document.getElementById("app"));
 
 
 if (module.hot) {

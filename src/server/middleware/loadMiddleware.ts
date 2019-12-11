@@ -72,7 +72,7 @@ const initRender = app => {
 const initController = app => {
   // 注册所有路由
   app.use(
-    loadControllers(resolve(__dirname, "../controller/*.ts"), {
+    loadControllers(resolve(__dirname, "../controller/*"), {
       cwd: __dirname
     })
   );
