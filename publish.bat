@@ -1,1 +1,1 @@
-git push -f git@github.com:zhuxinyu-znb/react-ts-template master
+git push -f git@github.com:zhuxinyu-znb/react-ts-template mobx_nossr
