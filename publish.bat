@@ -1,1 +1,1 @@
-git push -f git@github.com:zhuxinyu-znb/react-ts-template ts_mansys_ssr
+git push -f git@github.com:zhuxinyu-znb/react-ts-template ts_visual_ssr
