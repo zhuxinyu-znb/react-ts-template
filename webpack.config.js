@@ -43,9 +43,9 @@ if (!_isDev) imageloaders.push({
 const webpackConfig = {
     mode: _mode,
     target: 'web',
-    watchOptions : {
+    watchOptions: {
         //不监听的 node_modules 目录下的文件
-        ignored : /node_modules/,
+        ignored: /node_modules/,
     },
     entry: {
         app: join(__dirname, './src/client/index.tsx')
@@ -56,7 +56,23 @@ const webpackConfig = {
         publicPath: env.publicPath
     },
     externals: {
-        'AMap': 'AMap'
+        'AMap': 'AMap',
+        'react': {
+            commonjs: "react",
+            amd: "react",
+        },
+        'react-dom': {
+            commonjs: "react-dom",
+            amd: "react-dom",
+        },
+        'echarts': {
+            commonjs: "echarts",
+            amd: "echarts",
+        },
+        'antd': {
+            commonjs: "antd",
+            amd: "antd",
+        },
     },
     module: {
         rules: [
