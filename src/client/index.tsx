@@ -3,10 +3,8 @@ import * as ReactDOM from "react-dom";
 import Routes from "./routers";
 import "@assets/styles/common.css";
 import { BrowserRouter } from "react-router-dom";
-import YdStore from '@models/store';
 import { message } from 'antd';
 import ErrorBoundary from '@components/Error'
-import { observer } from 'mobx-react-lite';
 
 
 message.config({ duration: 2 })
@@ -14,16 +12,15 @@ window.message = message;
 const { useContext } = React
 
 
-const App = observer(() => {
-  const ydStore = useContext(YdStore)
+const App = () => {
   return (
     <ErrorBoundary>
       <BrowserRouter basename="/">
-        {Routes(ydStore)}
+        {Routes}
       </BrowserRouter>
     </ErrorBoundary>
   )
-})
+}
 
 ReactDOM.render(<App />, document.getElementById("app"));
 

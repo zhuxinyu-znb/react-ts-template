@@ -2,7 +2,6 @@ import { IIdex } from '../interface/IIndex'
 import User from '../model/User'
 
 export default class IndexService implements IIdex {
-  constructor() {}
 
   private userStorage: User[] = [
     {
@@ -15,7 +14,7 @@ export default class IndexService implements IIdex {
     }
   ]
 
-  public async getUser(id: string): User {
+  public getUser(id: string): User {
     let result: User
 
     result = this.userStorage[id]

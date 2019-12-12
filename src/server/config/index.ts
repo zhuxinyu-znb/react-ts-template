@@ -5,12 +5,13 @@ interface configIn {
   viewDir: string;
   staticDir: string;
   env: string;
-  port?: string;
+  port?: number;
 }
 
 let config: configIn = {
-  viewDir: join(__dirname, "..", "views"),
-  staticDir: join(__dirname, "..", "assets"),
+  viewDir: join(__dirname, "..", "dist"),
+  staticDir: join(__dirname,  "../dist"),
+  // staticDir: join(__dirname, "..", "assets"),
   env: process.env.NODE_ENV
 };
 
@@ -20,7 +21,7 @@ if (process.env.NODE_ENV == "development") {
   });
 }
 
-if (process.env.NODE_ENV == "production") {
+if (!process.env.NODE_ENV || process.env.NODE_ENV == "production") {
   config = extend(config, {
     port: 80
   });

@@ -12,6 +12,10 @@ const _isDev = _mode === 'development';/* ******************************* 判断
 const ManifestPlugin = require('webpack-manifest-plugin');/* *********** 映射缓存 */
 const env = require('./config/env')[_mode];/* ********************************* 引入publicPath */
 const cssLoaders = require('./config/cssLoaders.js')/* ***************** 引入css-loader配置 */
+const HardSourceWebpackPlugin = require('hard-source-webpack-plugin');/* 缓存第三方库文件，dll的升级版本 */
+const HappyPack = require('happypack')/* ******************************* 多线程打包，项目越大效果越明显 */
+const os = require('os')
+const happyThreadPool = HappyPack.ThreadPool({ size: os.cpus().length })
 const baseCssLoaders = _isDev ? ['style-loader'] : [{
     loader: MiniCSSExtractPlugin.loader,
 }]
@@ -39,6 +43,10 @@ if (!_isDev) imageloaders.push({
 const webpackConfig = {
     mode: _mode,
     target: 'web',
+    watchOptions : {
+        //不监听的 node_modules 目录下的文件
+        ignored : /node_modules/,
+    },
     entry: {
         app: join(__dirname, './src/client/index.tsx')
     },
@@ -47,11 +55,15 @@ const webpackConfig = {
         path: join(__dirname, './dist/assets'),
         publicPath: env.publicPath
     },
+    externals: {
+        'AMap': 'AMap'
+    },
     module: {
         rules: [
             {
                 test: /\.(le|c)ss$/,
                 use: [
+                    'cache-loader',
                     ...baseCssLoaders,
                     ...cssLoaders
                 ]
@@ -62,24 +74,30 @@ const webpackConfig = {
                 exclude: /node_modules/,
                 use: [
                     {
-                        loader: 'babel-loader',
-                        options: {
+                        loader: 'happypack/loader?id=happy-babel-js',
+                        /* options: {
                             plugins: _isDev ? ['dynamic-import-node'] : []
-                        }
+                        } */
                     },
                     'eslint-loader']
             },
             {
                 test: /.svg$/,
-                use: ['@svgr/webpack', 'url-loader'],
+                use: ['cache-loader', '@svgr/webpack', 'url-loader'],
+                include: [resolve("src")],
+                exclude: /node_modules/,
             },
             {
                 test: /\.(png|jpg|jpeg|gif|eot|woff|woff2|ttf|svg|otf)$/,
+                include: [resolve("src")],
+                exclude: /node_modules/,
                 use: imageloaders
             },
             {
                 test: /\.(mp4|webm|ogg|mp3|wav|flac|aac)(\?.*)?$/,
                 loader: 'url-loader',
+                include: [resolve("src")],
+                exclude: /node_modules/,
                 options: {
                     limit: 10 * 1024,
                     name: _isDev ? 'medias/[name].[ext]' : 'medias/[name].[hash:5].[ext]',
@@ -95,7 +113,8 @@ const webpackConfig = {
             "@models": resolve('src/client/models'),
             '@stores': resolve('src/client/stores'),
             '@pages': resolve('src/client/pages'),
-            '@utils': resolve('src/client/utils')
+            '@utils': resolve('src/client/utils'),
+            '@mocks': resolve('src/client/mocks')
         },
         modules: ['node_modules', resolve('src')],
         extensions: ['.js', '.jsx', '.ts', '.tsx']
@@ -108,7 +127,13 @@ const webpackConfig = {
         }),
         new ManifestPlugin(),
         new ProgressBarPlugin(),
+        new HappyPack({
+            id: 'happy-babel-js',
+            loaders: ['babel-loader?cacheDirectory=true'],
+            threadPool: happyThreadPool
+        }),
+        new HardSourceWebpackPlugin()
     ]
 }
 
-module.exports = smp.wrap(merge(_mergeConfig, webpackConfig));
+module.exports = merge(_mergeConfig, webpackConfig);

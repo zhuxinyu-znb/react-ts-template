@@ -18,6 +18,7 @@
         "@models/*": ["client/models/*"],
         "@pages/*": ["client/pages/*"],
         "@stores/*": ["client/stores"],
+        "@mocks/*": ["client/mocks"],
       }
     },
     "include": [

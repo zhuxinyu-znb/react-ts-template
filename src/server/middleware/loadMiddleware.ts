@@ -1,3 +1,4 @@
+import csshook from 'css-modules-require-hook';
 import * as bodyParser from "koa-bodyparser";
 const render = require("koa-swig");
 import * as serve from "koa-static";
@@ -7,7 +8,7 @@ import { resolve } from "path";
 import historyApiFallback from "koa2-connect-history-api-fallback";
 const { createContainer, Lifetime, asClass } = require("awilix"); // IOC
 const { loadControllers, scopePerRequest } = require("awilix-koa"); // IOC
-
+const path = require('path')
 import config from "../config";
 import errorHandler from "./errorHandler";
 
@@ -72,7 +73,7 @@ const initRender = app => {
 const initController = app => {
   // 注册所有路由
   app.use(
-    loadControllers(resolve(__dirname, "../controller/*.ts"), {
+    loadControllers(resolve(__dirname, "../controller/*"), {
       cwd: __dirname
     })
   );
