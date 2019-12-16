@@ -1,1 +1,0 @@
-git push -f git@github.com:zhuxinyu-znb/react-ts-template master
