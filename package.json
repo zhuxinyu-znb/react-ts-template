@@ -4,8 +4,6 @@
   "description": "基于webpack + react + typescript + koa2 的实战项目",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "d": "bash publish.bat",
     "client:dev": "scripty",
     "client:prod": "scripty",
     "server:start": "scripty"
