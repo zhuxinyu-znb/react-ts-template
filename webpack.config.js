@@ -124,6 +124,7 @@ const webpackConfig = {
     },
     resolve: {
         alias: {
+            '@ant-design/icons/lib/dist$': resolve(__dirname, 'path/to/antd-icons.js'),
             '@assets': resolve('src/client/assets'),
             '@components': resolve('src/client/components'),
             "@models": resolve('src/client/models'),
