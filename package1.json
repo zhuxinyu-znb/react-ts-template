@@ -28,7 +28,6 @@
     "echarts": "^4.5.0",
     "echarts-amap": "^1.4.15-rc.1",
     "lodash": "^4.17.15",
-    "log4js": "^6.1.0",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
     "react-router-dom": "^5.1.2"
