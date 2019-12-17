@@ -85,7 +85,7 @@ const webpackConfig = {
                 ]
             },
             {
-                test: /\.(js|jsx|ts|tsx)$/,
+                test: /\.(js|jsx)$/,
                 include: [resolve("src")],
                 exclude: /node_modules/,
                 use: [
