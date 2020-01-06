@@ -1,40 +1,49 @@
 const { join, resolve } = require("path");
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const nodeExternals = require('webpack-node-externals')
 
 module.exports = {
-  mode: "development",
+  mode: "production",
   target: "node",
   entry: {
-    app: join(__dirname, "../src/client/index-server-entry.tsx")
+    app: join(__dirname, "../src/client/server-entry.tsx")
   },
   output: {
     filename: "assets/server-entry.js",
     path: join(__dirname, '../dist'),
+    // path: join(__dirname, '../src/server'),
     libraryTarget: 'commonjs2'
+  },
+  externals: {
+    'AMap': 'AMap',
+    'react': {
+      commonjs: 'react',
+      commonjs2: 'react',
+      amd: 'react',
+      root: 'React',
+    },
   },
   module: {
     rules: [
       {
         test: /\.(css|less)$/,
-        include: [resolve("src")],
-        exclude: /node_modules/,
-        use: [
-          {
-            loader: 'css-loader',
-            options: {
-              importLoaders: 1
-            }
-          },
-          'postcss-loader',
-          'less-loader'
-        ]
+        loader: 'ignore-loader'
       },
       {
         test: /\.(js|jsx|ts|tsx)$/,
         include: [resolve("src")],
         exclude: /node_modules/,
         loader: "babel-loader"
-      }
+      },
+      {
+        test: /\.(png|jpg|jpeg|gif|eot|woff|woff2|ttf|svg|otf)$/,
+        include: [resolve("src")],
+        exclude: /node_modules/,
+        use: [
+          {
+            loader: 'url-loader',
+          }
+        ]
+      },
     ]
   },
   resolve: {
@@ -43,6 +52,7 @@ module.exports = {
       "@components": resolve("src/client/components"),
       "@models": resolve("src/client/models"),
       "@pages": resolve("src/client/pages"),
+      "@interface": resolve("src/client/interface"),
       "@utils": resolve("src/client/utils")
     },
     modules: ["node_modules", resolve("src")],
@@ -52,17 +62,11 @@ module.exports = {
   // 也可以这样写 const nodeExternals = require('webpack-node-externals')
   //   externals: [nodeExternals].
   //   externals: Object.keys(require('./package.json').dependencies),
-  devServer: {
-    compress: true,
-    port: '3000',
-    contentBase: join(__dirname, '../dist'),
-    disableHostCheck: true,
-    historyApiFallback: true,
-  },
-  plugins: [
-    // new HtmlWebpackPlugin({
-    //   template: './src/web/index-dev.html',
-    //   filename: 'index.html'
-    // })
-  ],
+  // devServer: {
+  //   compress: true,
+  //   port: '3000',
+  //   contentBase: join(__dirname, '../dist'),
+  //   disableHostCheck: true,
+  //   historyApiFallback: true,
+  // },
 }

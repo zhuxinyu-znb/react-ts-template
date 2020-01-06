@@ -53,31 +53,12 @@ const webpackConfig = {
     output: {
         filename: _isDev ? 'scripts/[name].js' : 'scripts/[name].[contenthash:5].js',
         path: join(__dirname, './dist/assets'),
+        // path: join(__dirname, './src/server/assets'),
         publicPath: env.publicPath
     },
     externals: {
-        'AMap': 'AMap',
-        /* 'react': {
-            commonjs: "react",
-            amd: "react",
+            'AMap': 'AMap',
         },
-        'react-dom': {
-            commonjs: "react-dom",
-            amd: "react-dom",
-        },
-        'react-router-dom': {
-            commonjs: "react-router-dom",
-            amd: "react-router-dom",
-        }, */
-        /* 'echarts': {
-            commonjs: "echarts",
-            amd: "echarts",
-        }, */
-        /* 'antd': {
-            commonjs: "antd",
-            amd: "antd",
-        }, */
-    },
     module: {
         rules: [
             {
@@ -135,6 +116,7 @@ const webpackConfig = {
             '@stores': resolve('src/client/stores'),
             '@pages': resolve('src/client/pages'),
             '@utils': resolve('src/client/utils'),
+            '@interface': resolve('src/client/interface'),
             '@mocks': resolve('src/client/mocks')
         },
         modules: ['node_modules', resolve('src')],

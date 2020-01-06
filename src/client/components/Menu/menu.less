@@ -1,0 +1,42 @@
+.layout-container {
+    width: 100vw;
+    height: 100vh;
+
+    .trigger {
+        margin-left: 15px;
+    }
+
+    .menu_logo {
+        padding: 0 16px;
+        height: 50px;
+        white-space: nowrap;
+        background: #002140;
+        /*text-overflow: clip*/
+    }
+
+    .ant-layout-sider-collapsed .menu_logo {
+        padding: 0 14px;
+    }
+
+    .menu_logo>img {
+        margin-right: 10px;
+        height: 20px;
+    }
+
+    .menu_logo>span {
+        color: white;
+        font-size: 18px;
+        font-weight: bolder;
+    }
+
+    .ant-layout-sider-collapsed .menu_logo>span {
+        opacity: 0;
+    }
+
+    .menu_logo>img,
+    .menu_logo>span {
+        line-height: 50px;
+        display: inline-block;
+        vertical-align: middle;
+    }
+}

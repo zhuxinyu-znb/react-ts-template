@@ -19,6 +19,7 @@
         "@pages/*": ["client/pages/*"],
         "@stores/*": ["client/stores"],
         "@mocks/*": ["client/mocks"],
+        "@interface/*": ["client/interface/*"]
       }
     },
     "include": [

@@ -9,9 +9,10 @@ interface configIn {
 }
 
 let config: configIn = {
-  viewDir: join(__dirname, "..", "dist"),
-  staticDir: join(__dirname,  "../dist"),
-  // staticDir: join(__dirname, "..", "assets"),
+  // viewDir: join(__dirname, "..", "dist"),
+  // staticDir: join(__dirname,  "../dist"),
+  staticDir: join(__dirname, "..", "assets"),
+  viewDir: join(__dirname, "..", "assets"),
   env: process.env.NODE_ENV
 };
 

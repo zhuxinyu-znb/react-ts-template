@@ -27,9 +27,11 @@
     "cross-env": "^6.0.3",
     "echarts": "^4.5.0",
     "echarts-amap": "^1.4.15-rc.1",
+    "ignore-loader": "^0.1.2",
     "lodash": "^4.17.15",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
+    "react-loadable": "^5.5.0",
     "react-router-dom": "^5.1.2"
   },
   "devDependencies": {
@@ -49,6 +51,7 @@
     "@types/react-dom": "^16.9.4",
     "@types/react-router-dom": "^5.1.2",
     "@types/typescript": "^2.0.0",
+    "@types/webpack-env": "^1.15.0",
     "@typescript-eslint/eslint-plugin": "^2.7.0",
     "@typescript-eslint/parser": "^2.7.0",
     "babel-loader": "^8.0.6",
@@ -89,6 +92,7 @@
     "webpack-cli": "^3.3.10",
     "webpack-dev-server": "^3.9.0",
     "webpack-jarvis": "^0.3.2",
+    "webpack-node-externals": "^1.7.2",
     "webpack-manifest-plugin": "^2.2.0",
     "webpack-merge": "^4.2.2",
     "webpack-parallel-uglify-plugin": "^1.1.2",

@@ -2,7 +2,6 @@
 // import { route, GET } from "awilix-koa";
 // const ReactDomServer = require("react-dom/server");
 // const serverEntry = require("../assets/server-entry.js").default;
-// console.log("serverEntry", serverEntry);
 // const { Readable } = require("stream");
 // const LRU = require("lru-cache");
 
@@ -24,13 +23,12 @@
 //   constructor({ indexService }) {
 //     this.indexService = indexService;
 //   }
-//   @route("/:action?")
 //   @GET()
 //   private async index(
 //     ctx: Router.IRouterContext,
 //     next: () => Promise<any>
 //   ): Promise<any> {
-//     /* const _controller = ctx.params.controller
+//     const _controller = ctx.params.controller
 //       ? `/${ctx.params.controller}`
 //       : "/";
 //     let result = await ctx.render("index");
@@ -42,7 +40,7 @@
 //       appString = ReactDomServer.renderToString(serverEntry(_controller));
 //       cache.set(_controller, appString);
 //     }
-//     result = result.replace("<App />", appString);
+//     result = result.replace("<app id=app></app>", appString);
 //     ctx.status = 200;
 //     ctx.type = "html";
 //     function createSsrStreamPromise() {
@@ -57,7 +55,7 @@
 //           .pipe(ctx.res);
 //       });
 //     }
-//     await createSsrStreamPromise(); */
+//     await createSsrStreamPromise();
 
 //     // ctx.body = await ctx.render("index");
 //   }

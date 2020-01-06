@@ -24,6 +24,7 @@
         "@models/*": ["client/models/*"],
         "@pages/*": ["client/pages/*"],
         "@stores/*": ["client/stores"],
+        "@interface/*": ["client/interface"],
       },
       "noImplicitAny": false,
       "sourceMap": false,

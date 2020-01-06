@@ -9,8 +9,6 @@ import ErrorBoundary from '@components/Error'
 
 message.config({ duration: 2 })
 window.message = message;
-// const { useContext } = React
-
 
 const App = () => {
   return (
@@ -22,7 +20,7 @@ const App = () => {
   )
 }
 
-ReactDOM.render(<App />, document.getElementById("app"));
+ReactDOM.hydrate(<App />, document.getElementById("app"));
 
 
 if (module.hot) {
@@ -36,3 +34,4 @@ if (module.hot) {
     console.log("module update");
   });
 }
+

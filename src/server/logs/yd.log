@@ -117,3 +117,1833 @@ See https://fb.me/react-invalid-hook-call for tips about how to debug and fix th
   req: '<original node req>',
   res: '<original node res>',
   socket: '<original node socket>' }
+[2020-01-02T14:19:23.172] [ERROR] cheese - { request:
+   { method: 'GET',
+     url: '/',
+     header:
+      { host: 'localhost:8081',
+        connection: 'keep-alive',
+        'upgrade-insecure-requests': '1',
+        'user-agent':
+         'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+        'sec-fetch-user': '?1',
+        accept:
+         'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+        'sec-fetch-site': 'none',
+        'sec-fetch-mode': 'navigate',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'zh-CN,zh;q=0.9',
+        cookie: 'remember=false' } },
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header: [Object: null prototype] {} },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>' }
+[2020-01-02T14:19:23.952] [ERROR] cheese - { request:
+   { method: 'GET',
+     url: '/favicon.ico',
+     header:
+      { host: 'localhost:8081',
+        connection: 'keep-alive',
+        'user-agent':
+         'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+        accept: 'image/webp,image/apng,image/*,*/*;q=0.8',
+        'sec-fetch-site': 'same-origin',
+        'sec-fetch-mode': 'no-cors',
+        referer: 'http://localhost:8081/',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'zh-CN,zh;q=0.9',
+        cookie: 'remember=false' } },
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header: [Object: null prototype] {} },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/favicon.ico',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>' }
+[2020-01-02T14:19:57.210] [ERROR] cheese - { request:
+   { method: 'GET',
+     url: '/',
+     header:
+      { host: 'localhost:8081',
+        connection: 'keep-alive',
+        'upgrade-insecure-requests': '1',
+        'user-agent':
+         'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+        'sec-fetch-user': '?1',
+        accept:
+         'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+        'sec-fetch-site': 'none',
+        'sec-fetch-mode': 'navigate',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'zh-CN,zh;q=0.9',
+        cookie: 'remember=false' } },
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header: [Object: null prototype] {} },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/test',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>' }
+[2020-01-02T14:20:11.000] [ERROR] cheese - { request:
+   { method: 'GET',
+     url: '/api',
+     header:
+      { host: 'localhost:8081',
+        connection: 'keep-alive',
+        'upgrade-insecure-requests': '1',
+        'user-agent':
+         'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+        accept:
+         'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+        'sec-fetch-site': 'none',
+        'sec-fetch-mode': 'navigate',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'zh-CN,zh;q=0.9',
+        cookie: 'remember=false' } },
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header: [Object: null prototype] {} },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/api',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>' }
+[2020-01-02T14:20:24.839] [ERROR] cheese - Error: Invalid hook call. Hooks can only be called inside of the body of a function component. This could happen for one of the following reasons:
+1. You might have mismatching versions of React and the renderer (such as React DOM)
+2. You might be breaking the Rules of Hooks
+3. You might have more than one copy of React in the same app
+See https://fb.me/react-invalid-hook-call for tips about how to debug and fix this problem.
+    at resolveDispatcher (webpack:///./node_modules/react/cjs/react.development.js?:1590:13)
+    at useState (webpack:///./node_modules/react/cjs/react.development.js?:1618:20)
+    at Report (webpack:///./src/client/pages/report/index.tsx?:17:19)
+    at processChild (E:\京城一灯\实战\react-ts-template\node_modules\react-dom\cjs\react-dom-server.node.development.js:3206:14)
+    at resolve (E:\京城一灯\实战\react-ts-template\node_modules\react-dom\cjs\react-dom-server.node.development.js:3126:5)
+    at ReactDOMServerRenderer.render (E:\京城一灯\实战\react-ts-template\node_modules\react-dom\cjs\react-dom-server.node.development.js:3600:22)
+    at ReactDOMServerRenderer.read (E:\京城一灯\实战\react-ts-template\node_modules\react-dom\cjs\react-dom-server.node.development.js:3538:29)
+    at Object.renderToString (E:\京城一灯\实战\react-ts-template\node_modules\react-dom\cjs\react-dom-server.node.development.js:4247:27)
+    at LoginController.<anonymous> (E:\京城一灯\实战\react-ts-template\src\server\controller\LoginController.ts:14:38)
+    at step (E:\京城一灯\实战\react-ts-template\src\server\controller\LoginController.ts:42:23)
+[2020-01-02T14:57:48.721] [ERROR] cheese - Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: object.
+    at ReactDOMServerRenderer.render (E:\京城一灯\实战\react-ts-template\node_modules\react-dom\cjs\react-dom-server.node.development.js:4008:17)
+    at ReactDOMServerRenderer.read (E:\京城一灯\实战\react-ts-template\node_modules\react-dom\cjs\react-dom-server.node.development.js:3538:29)
+    at Object.renderToString (E:\京城一灯\实战\react-ts-template\node_modules\react-dom\cjs\react-dom-server.node.development.js:4247:27)
+    at LoginController.<anonymous> (E:\京城一灯\实战\react-ts-template\src\server\controller\LoginController.ts:13:38)
+    at step (E:\京城一灯\实战\react-ts-template\src\server\controller\LoginController.ts:42:23)
+    at Object.next (E:\京城一灯\实战\react-ts-template\src\server\controller\LoginController.ts:23:53)
+    at E:\京城一灯\实战\react-ts-template\src\server\controller\LoginController.ts:17:71
+    at new Promise (<anonymous>)
+    at __awaiter (E:\京城一灯\实战\react-ts-template\src\server\controller\LoginController.ts:13:12)
+    at LoginController.index (E:\京城一灯\实战\react-ts-template\src\server\controller\LoginController.ts:56:16)
+[2020-01-02T14:58:29.844] [ERROR] cheese - Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: object.
+    at ReactDOMServerRenderer.render (E:\京城一灯\实战\react-ts-template\node_modules\react-dom\cjs\react-dom-server.node.development.js:4008:17)
+    at ReactDOMServerRenderer.read (E:\京城一灯\实战\react-ts-template\node_modules\react-dom\cjs\react-dom-server.node.development.js:3538:29)
+    at Object.renderToString (E:\京城一灯\实战\react-ts-template\node_modules\react-dom\cjs\react-dom-server.node.development.js:4247:27)
+    at LoginController.<anonymous> (E:\京城一灯\实战\react-ts-template\src\server\controller\LoginController.ts:13:38)
+    at step (E:\京城一灯\实战\react-ts-template\src\server\controller\LoginController.ts:42:23)
+    at Object.next (E:\京城一灯\实战\react-ts-template\src\server\controller\LoginController.ts:23:53)
+    at E:\京城一灯\实战\react-ts-template\src\server\controller\LoginController.ts:17:71
+    at new Promise (<anonymous>)
+    at __awaiter (E:\京城一灯\实战\react-ts-template\src\server\controller\LoginController.ts:13:12)
+    at LoginController.index (E:\京城一灯\实战\react-ts-template\src\server\controller\LoginController.ts:56:16)
+[2020-01-02T14:59:00.164] [ERROR] cheese - Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: object.
+    at ReactDOMServerRenderer.render (E:\京城一灯\实战\react-ts-template\node_modules\react-dom\cjs\react-dom-server.node.development.js:4008:17)
+    at ReactDOMServerRenderer.read (E:\京城一灯\实战\react-ts-template\node_modules\react-dom\cjs\react-dom-server.node.development.js:3538:29)
+    at Object.renderToString (E:\京城一灯\实战\react-ts-template\node_modules\react-dom\cjs\react-dom-server.node.development.js:4247:27)
+    at LoginController.<anonymous> (E:\京城一灯\实战\react-ts-template\src\server\controller\LoginController.ts:13:38)
+    at step (E:\京城一灯\实战\react-ts-template\src\server\controller\LoginController.ts:42:23)
+    at Object.next (E:\京城一灯\实战\react-ts-template\src\server\controller\LoginController.ts:23:53)
+    at E:\京城一灯\实战\react-ts-template\src\server\controller\LoginController.ts:17:71
+    at new Promise (<anonymous>)
+    at __awaiter (E:\京城一灯\实战\react-ts-template\src\server\controller\LoginController.ts:13:12)
+    at LoginController.index (E:\京城一灯\实战\react-ts-template\src\server\controller\LoginController.ts:56:16)
+[2020-01-02T15:01:42.330] [ERROR] cheese - Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: object.
+    at ReactDOMServerRenderer.render (E:\京城一灯\实战\react-ts-template\node_modules\react-dom\cjs\react-dom-server.node.development.js:4008:17)
+    at ReactDOMServerRenderer.read (E:\京城一灯\实战\react-ts-template\node_modules\react-dom\cjs\react-dom-server.node.development.js:3538:29)
+    at Object.renderToString (E:\京城一灯\实战\react-ts-template\node_modules\react-dom\cjs\react-dom-server.node.development.js:4247:27)
+    at LoginController.<anonymous> (E:\京城一灯\实战\react-ts-template\src\server\controller\LoginController.ts:13:38)
+    at step (E:\京城一灯\实战\react-ts-template\src\server\controller\LoginController.ts:42:23)
+    at Object.next (E:\京城一灯\实战\react-ts-template\src\server\controller\LoginController.ts:23:53)
+    at E:\京城一灯\实战\react-ts-template\src\server\controller\LoginController.ts:17:71
+    at new Promise (<anonymous>)
+    at __awaiter (E:\京城一灯\实战\react-ts-template\src\server\controller\LoginController.ts:13:12)
+    at LoginController.index (E:\京城一灯\实战\react-ts-template\src\server\controller\LoginController.ts:56:16)
+[2020-01-02T15:02:06.423] [ERROR] cheese - Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: object.
+    at ReactDOMServerRenderer.render (E:\京城一灯\实战\react-ts-template\node_modules\react-dom\cjs\react-dom-server.node.development.js:4008:17)
+    at ReactDOMServerRenderer.read (E:\京城一灯\实战\react-ts-template\node_modules\react-dom\cjs\react-dom-server.node.development.js:3538:29)
+    at Object.renderToString (E:\京城一灯\实战\react-ts-template\node_modules\react-dom\cjs\react-dom-server.node.development.js:4247:27)
+    at LoginController.<anonymous> (E:\京城一灯\实战\react-ts-template\src\server\controller\LoginController.ts:13:38)
+    at step (E:\京城一灯\实战\react-ts-template\src\server\controller\LoginController.ts:42:23)
+    at Object.next (E:\京城一灯\实战\react-ts-template\src\server\controller\LoginController.ts:23:53)
+    at E:\京城一灯\实战\react-ts-template\src\server\controller\LoginController.ts:17:71
+    at new Promise (<anonymous>)
+    at __awaiter (E:\京城一灯\实战\react-ts-template\src\server\controller\LoginController.ts:13:12)
+    at LoginController.index (E:\京城一灯\实战\react-ts-template\src\server\controller\LoginController.ts:56:16)
+[2020-01-02T15:08:47.089] [ERROR] cheese - Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: object.
+    at ReactDOMServerRenderer.render (E:\京城一灯\实战\react-ts-template\node_modules\react-dom\cjs\react-dom-server.node.development.js:4008:17)
+    at ReactDOMServerRenderer.read (E:\京城一灯\实战\react-ts-template\node_modules\react-dom\cjs\react-dom-server.node.development.js:3538:29)
+    at Object.renderToString (E:\京城一灯\实战\react-ts-template\node_modules\react-dom\cjs\react-dom-server.node.development.js:4247:27)
+    at LoginController.<anonymous> (E:\京城一灯\实战\react-ts-template\src\server\controller\LoginController.ts:13:38)
+    at step (E:\京城一灯\实战\react-ts-template\src\server\controller\LoginController.ts:42:23)
+    at Object.next (E:\京城一灯\实战\react-ts-template\src\server\controller\LoginController.ts:23:53)
+    at E:\京城一灯\实战\react-ts-template\src\server\controller\LoginController.ts:17:71
+    at new Promise (<anonymous>)
+    at __awaiter (E:\京城一灯\实战\react-ts-template\src\server\controller\LoginController.ts:13:12)
+    at LoginController.index (E:\京城一灯\实战\react-ts-template\src\server\controller\LoginController.ts:56:16)
+[2020-01-02T15:13:01.229] [ERROR] cheese - { request:
+   { method: 'GET',
+     url: '/report',
+     header:
+      { host: 'localhost:8081',
+        connection: 'keep-alive',
+        'cache-control': 'max-age=0',
+        'upgrade-insecure-requests': '1',
+        'user-agent':
+         'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+        'sec-fetch-user': '?1',
+        accept:
+         'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+        'sec-fetch-site': 'none',
+        'sec-fetch-mode': 'navigate',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'zh-CN,zh;q=0.9',
+        cookie: 'remember=false' } },
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header: [Object: null prototype] {} },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/report',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>' }
+[2020-01-02T15:13:19.068] [ERROR] cheese - { [Error: ENOENT: no such file or directory, open 'E:\京城一灯\实战\react-ts-template\src\server\config\views\index.html']
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path:
+   'E:\\京城一灯\\实战\\react-ts-template\\src\\server\\config\\views\\index.html' }
+[2020-01-02T16:50:51.479] [ERROR] cheese - Error: Minified React error #321; visit https://reactjs.org/docs/error-decoder.html?invariant=321 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+    at F (E:\京城一灯\实战\react-ts-template\src\server\assets\server-entry.js:19:4001)
+    at useState (E:\京城一灯\实战\react-ts-template\src\server\assets\server-entry.js:19:5367)
+    at De (E:\京城一灯\实战\react-ts-template\src\server\assets\server-entry.js:43:20731)
+    at processChild (E:\京城一灯\实战\react-ts-template\node_modules\react-dom\cjs\react-dom-server.node.development.js:3206:14)
+    at resolve (E:\京城一灯\实战\react-ts-template\node_modules\react-dom\cjs\react-dom-server.node.development.js:3126:5)
+    at ReactDOMServerRenderer.render (E:\京城一灯\实战\react-ts-template\node_modules\react-dom\cjs\react-dom-server.node.development.js:3600:22)
+    at ReactDOMServerRenderer.read (E:\京城一灯\实战\react-ts-template\node_modules\react-dom\cjs\react-dom-server.node.development.js:3538:29)
+    at Object.renderToString (E:\京城一灯\实战\react-ts-template\node_modules\react-dom\cjs\react-dom-server.node.development.js:4247:27)
+    at LoginController.<anonymous> (E:\京城一灯\实战\react-ts-template\src\server\controller\LoginController.ts:13:38)
+    at step (E:\京城一灯\实战\react-ts-template\src\server\controller\LoginController.ts:42:23)
+[2020-01-02T16:52:04.919] [ERROR] cheese - Error: Minified React error #321; visit https://reactjs.org/docs/error-decoder.html?invariant=321 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+    at F (E:\京城一灯\实战\react-ts-template\src\server\assets\server-entry.js:19:4001)
+    at useState (E:\京城一灯\实战\react-ts-template\src\server\assets\server-entry.js:19:5367)
+    at De (E:\京城一灯\实战\react-ts-template\src\server\assets\server-entry.js:43:20731)
+    at processChild (E:\京城一灯\实战\react-ts-template\node_modules\react-dom\cjs\react-dom-server.node.development.js:3206:14)
+    at resolve (E:\京城一灯\实战\react-ts-template\node_modules\react-dom\cjs\react-dom-server.node.development.js:3126:5)
+    at ReactDOMServerRenderer.render (E:\京城一灯\实战\react-ts-template\node_modules\react-dom\cjs\react-dom-server.node.development.js:3600:22)
+    at ReactDOMServerRenderer.read (E:\京城一灯\实战\react-ts-template\node_modules\react-dom\cjs\react-dom-server.node.development.js:3538:29)
+    at Object.renderToString (E:\京城一灯\实战\react-ts-template\node_modules\react-dom\cjs\react-dom-server.node.development.js:4247:27)
+    at LoginController.<anonymous> (E:\京城一灯\实战\react-ts-template\src\server\controller\LoginController.ts:13:38)
+    at step (E:\京城一灯\实战\react-ts-template\src\server\controller\LoginController.ts:42:23)
+[2020-01-02T16:52:05.606] [ERROR] cheese - Error: Minified React error #321; visit https://reactjs.org/docs/error-decoder.html?invariant=321 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+    at F (E:\京城一灯\实战\react-ts-template\src\server\assets\server-entry.js:19:4001)
+    at useState (E:\京城一灯\实战\react-ts-template\src\server\assets\server-entry.js:19:5367)
+    at De (E:\京城一灯\实战\react-ts-template\src\server\assets\server-entry.js:43:20731)
+    at processChild (E:\京城一灯\实战\react-ts-template\node_modules\react-dom\cjs\react-dom-server.node.development.js:3206:14)
+    at resolve (E:\京城一灯\实战\react-ts-template\node_modules\react-dom\cjs\react-dom-server.node.development.js:3126:5)
+    at ReactDOMServerRenderer.render (E:\京城一灯\实战\react-ts-template\node_modules\react-dom\cjs\react-dom-server.node.development.js:3600:22)
+    at ReactDOMServerRenderer.read (E:\京城一灯\实战\react-ts-template\node_modules\react-dom\cjs\react-dom-server.node.development.js:3538:29)
+    at Object.renderToString (E:\京城一灯\实战\react-ts-template\node_modules\react-dom\cjs\react-dom-server.node.development.js:4247:27)
+    at LoginController.<anonymous> (E:\京城一灯\实战\react-ts-template\src\server\controller\LoginController.ts:13:38)
+    at step (E:\京城一灯\实战\react-ts-template\src\server\controller\LoginController.ts:42:23)
+[2020-01-02T17:00:15.014] [ERROR] cheese - Error: Minified React error #321; visit https://reactjs.org/docs/error-decoder.html?invariant=321 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+    at F (E:\京城一灯\实战\react-ts-template\src\server\assets\server-entry.js:19:4001)
+    at useState (E:\京城一灯\实战\react-ts-template\src\server\assets\server-entry.js:19:5367)
+    at component (E:\京城一灯\实战\react-ts-template\src\server\assets\server-entry.js:43:22489)
+    at processChild (E:\京城一灯\实战\react-ts-template\node_modules\react-dom\cjs\react-dom-server.node.development.js:3206:14)
+    at resolve (E:\京城一灯\实战\react-ts-template\node_modules\react-dom\cjs\react-dom-server.node.development.js:3126:5)
+    at ReactDOMServerRenderer.render (E:\京城一灯\实战\react-ts-template\node_modules\react-dom\cjs\react-dom-server.node.development.js:3600:22)
+    at ReactDOMServerRenderer.read (E:\京城一灯\实战\react-ts-template\node_modules\react-dom\cjs\react-dom-server.node.development.js:3538:29)
+    at Object.renderToString (E:\京城一灯\实战\react-ts-template\node_modules\react-dom\cjs\react-dom-server.node.development.js:4247:27)
+    at LoginController.<anonymous> (E:\京城一灯\实战\react-ts-template\src\server\controller\ReportController.ts:13:38)
+    at step (E:\京城一灯\实战\react-ts-template\src\server\controller\ReportController.ts:42:23)
+[2020-01-02T17:01:45.901] [ERROR] cheese - { request:
+   { method: 'GET',
+     url: '/report',
+     header:
+      { host: 'localhost:8081',
+        connection: 'keep-alive',
+        'cache-control': 'max-age=0',
+        'upgrade-insecure-requests': '1',
+        'user-agent':
+         'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+        'sec-fetch-user': '?1',
+        accept:
+         'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+        'sec-fetch-site': 'cross-site',
+        'sec-fetch-mode': 'navigate',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'zh-CN,zh;q=0.9',
+        cookie: 'remember=false' } },
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header: [Object: null prototype] {} },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/report',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>' }
+[2020-01-02T17:01:48.156] [ERROR] cheese - { request:
+   { method: 'GET',
+     url: '/report',
+     header:
+      { host: 'localhost:8081',
+        connection: 'keep-alive',
+        'cache-control': 'max-age=0',
+        'upgrade-insecure-requests': '1',
+        'user-agent':
+         'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+        'sec-fetch-user': '?1',
+        accept:
+         'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+        'sec-fetch-site': 'cross-site',
+        'sec-fetch-mode': 'navigate',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'zh-CN,zh;q=0.9',
+        cookie: 'remember=false' } },
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header: [Object: null prototype] {} },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/report',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>' }
+[2020-01-02T17:05:54.859] [ERROR] cheese - Error: Minified React error #321; visit https://reactjs.org/docs/error-decoder.html?invariant=321 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+    at F (E:\京城一灯\实战\react-ts-template\src\server\assets\server-entry.js:19:4001)
+    at useState (E:\京城一灯\实战\react-ts-template\src\server\assets\server-entry.js:19:5367)
+    at component (E:\京城一灯\实战\react-ts-template\src\server\assets\server-entry.js:43:22489)
+    at processChild (E:\京城一灯\实战\react-ts-template\node_modules\react-dom\cjs\react-dom-server.node.development.js:3206:14)
+    at resolve (E:\京城一灯\实战\react-ts-template\node_modules\react-dom\cjs\react-dom-server.node.development.js:3126:5)
+    at ReactDOMServerRenderer.render (E:\京城一灯\实战\react-ts-template\node_modules\react-dom\cjs\react-dom-server.node.development.js:3600:22)
+    at ReactDOMServerRenderer.read (E:\京城一灯\实战\react-ts-template\node_modules\react-dom\cjs\react-dom-server.node.development.js:3538:29)
+    at Object.renderToString (E:\京城一灯\实战\react-ts-template\node_modules\react-dom\cjs\react-dom-server.node.development.js:4247:27)
+    at LoginController.<anonymous> (E:\京城一灯\实战\react-ts-template\src\server\controller\ReportController.ts:13:38)
+    at step (E:\京城一灯\实战\react-ts-template\src\server\controller\ReportController.ts:42:23)
+[2020-01-02T17:12:45.723] [ERROR] cheese - Error: Minified React error #321; visit https://reactjs.org/docs/error-decoder.html?invariant=321 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+    at F (E:\京城一灯\实战\react-ts-template\src\server\assets\server-entry.js:19:4001)
+    at useState (E:\京城一灯\实战\react-ts-template\src\server\assets\server-entry.js:19:5367)
+    at component (E:\京城一灯\实战\react-ts-template\src\server\assets\server-entry.js:43:22489)
+    at processChild (E:\京城一灯\实战\react-ts-template\node_modules\react-dom\cjs\react-dom-server.node.development.js:3206:14)
+    at resolve (E:\京城一灯\实战\react-ts-template\node_modules\react-dom\cjs\react-dom-server.node.development.js:3126:5)
+    at ReactDOMServerRenderer.render (E:\京城一灯\实战\react-ts-template\node_modules\react-dom\cjs\react-dom-server.node.development.js:3600:22)
+    at ReactDOMServerRenderer.read (E:\京城一灯\实战\react-ts-template\node_modules\react-dom\cjs\react-dom-server.node.development.js:3538:29)
+    at Object.renderToString (E:\京城一灯\实战\react-ts-template\node_modules\react-dom\cjs\react-dom-server.node.development.js:4247:27)
+    at LoginController.<anonymous> (E:\京城一灯\实战\react-ts-template\src\server\controller\ReportController.ts:13:38)
+    at step (E:\京城一灯\实战\react-ts-template\src\server\controller\ReportController.ts:42:23)
+[2020-01-03T10:59:44.864] [ERROR] cheese - { request:
+   { method: 'GET',
+     url: '/styles/images/bg.6cfea.jpeg',
+     header:
+      { host: 'localhost:8081',
+        connection: 'keep-alive',
+        'user-agent':
+         'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+        accept: 'image/webp,image/apng,image/*,*/*;q=0.8',
+        'sec-fetch-site': 'same-origin',
+        'sec-fetch-mode': 'no-cors',
+        referer: 'http://localhost:8081/styles/0.9dfe5.css',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'zh-CN,zh;q=0.9',
+        cookie: 'remember=false' } },
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header: [Object: null prototype] {} },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/styles/images/bg.6cfea.jpeg',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>' }
+[2020-01-03T10:59:44.931] [ERROR] cheese - { request:
+   { method: 'GET',
+     url: '/favicon.ico',
+     header:
+      { host: 'localhost:8081',
+        connection: 'keep-alive',
+        'user-agent':
+         'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+        accept: 'image/webp,image/apng,image/*,*/*;q=0.8',
+        'sec-fetch-site': 'same-origin',
+        'sec-fetch-mode': 'no-cors',
+        referer: 'http://localhost:8081/login',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'zh-CN,zh;q=0.9',
+        cookie: 'remember=false' } },
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header: [Object: null prototype] {} },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/favicon.ico',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>' }
+[2020-01-03T10:59:49.220] [ERROR] cheese - Error: Minified React error #321; visit https://reactjs.org/docs/error-decoder.html?invariant=321 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+    at F (E:\京城一灯\实战\react-ts-template\src\server\assets\server-entry.js:19:4001)
+    at useState (E:\京城一灯\实战\react-ts-template\src\server\assets\server-entry.js:19:5367)
+    at De (E:\京城一灯\实战\react-ts-template\src\server\assets\server-entry.js:43:21265)
+    at processChild (E:\京城一灯\实战\react-ts-template\node_modules\react-dom\cjs\react-dom-server.node.development.js:3206:14)
+    at resolve (E:\京城一灯\实战\react-ts-template\node_modules\react-dom\cjs\react-dom-server.node.development.js:3126:5)
+    at ReactDOMServerRenderer.render (E:\京城一灯\实战\react-ts-template\node_modules\react-dom\cjs\react-dom-server.node.development.js:3600:22)
+    at ReactDOMServerRenderer.read (E:\京城一灯\实战\react-ts-template\node_modules\react-dom\cjs\react-dom-server.node.development.js:3538:29)
+    at Object.renderToString (E:\京城一灯\实战\react-ts-template\node_modules\react-dom\cjs\react-dom-server.node.development.js:4247:27)
+    at LoginController.<anonymous> (E:\京城一灯\实战\react-ts-template\src\server\controller\LoginController.ts:13:38)
+    at step (E:\京城一灯\实战\react-ts-template\src\server\controller\LoginController.ts:42:23)
+[2020-01-03T11:00:16.834] [ERROR] cheese - Error: Minified React error #321; visit https://reactjs.org/docs/error-decoder.html?invariant=321 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+    at F (E:\京城一灯\实战\react-ts-template\src\server\assets\server-entry.js:19:4001)
+    at useState (E:\京城一灯\实战\react-ts-template\src\server\assets\server-entry.js:19:5367)
+    at component (E:\京城一灯\实战\react-ts-template\src\server\assets\server-entry.js:43:22489)
+    at processChild (E:\京城一灯\实战\react-ts-template\node_modules\react-dom\cjs\react-dom-server.node.development.js:3206:14)
+    at resolve (E:\京城一灯\实战\react-ts-template\node_modules\react-dom\cjs\react-dom-server.node.development.js:3126:5)
+    at ReactDOMServerRenderer.render (E:\京城一灯\实战\react-ts-template\node_modules\react-dom\cjs\react-dom-server.node.development.js:3600:22)
+    at ReactDOMServerRenderer.read (E:\京城一灯\实战\react-ts-template\node_modules\react-dom\cjs\react-dom-server.node.development.js:3538:29)
+    at Object.renderToString (E:\京城一灯\实战\react-ts-template\node_modules\react-dom\cjs\react-dom-server.node.development.js:4247:27)
+    at LoginController.<anonymous> (E:\京城一灯\实战\react-ts-template\src\server\controller\ReportController.ts:13:38)
+    at step (E:\京城一灯\实战\react-ts-template\src\server\controller\ReportController.ts:42:23)
+[2020-01-03T11:00:17.532] [ERROR] cheese - Error: Minified React error #321; visit https://reactjs.org/docs/error-decoder.html?invariant=321 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+    at F (E:\京城一灯\实战\react-ts-template\src\server\assets\server-entry.js:19:4001)
+    at useState (E:\京城一灯\实战\react-ts-template\src\server\assets\server-entry.js:19:5367)
+    at component (E:\京城一灯\实战\react-ts-template\src\server\assets\server-entry.js:43:22489)
+    at processChild (E:\京城一灯\实战\react-ts-template\node_modules\react-dom\cjs\react-dom-server.node.development.js:3206:14)
+    at resolve (E:\京城一灯\实战\react-ts-template\node_modules\react-dom\cjs\react-dom-server.node.development.js:3126:5)
+    at ReactDOMServerRenderer.render (E:\京城一灯\实战\react-ts-template\node_modules\react-dom\cjs\react-dom-server.node.development.js:3600:22)
+    at ReactDOMServerRenderer.read (E:\京城一灯\实战\react-ts-template\node_modules\react-dom\cjs\react-dom-server.node.development.js:3538:29)
+    at Object.renderToString (E:\京城一灯\实战\react-ts-template\node_modules\react-dom\cjs\react-dom-server.node.development.js:4247:27)
+    at LoginController.<anonymous> (E:\京城一灯\实战\react-ts-template\src\server\controller\ReportController.ts:13:38)
+    at step (E:\京城一灯\实战\react-ts-template\src\server\controller\ReportController.ts:42:23)
+[2020-01-03T11:37:35.545] [ERROR] cheese - { request:
+   { method: 'GET',
+     url: '/styles/images/bg.6cfea.jpeg',
+     header:
+      { host: 'localhost:8081',
+        connection: 'keep-alive',
+        'user-agent':
+         'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+        accept: 'image/webp,image/apng,image/*,*/*;q=0.8',
+        'sec-fetch-site': 'same-origin',
+        'sec-fetch-mode': 'no-cors',
+        referer: 'http://localhost:8081/styles/0.9dfe5.css',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'zh-CN,zh;q=0.9',
+        cookie: 'remember=false' } },
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header: [Object: null prototype] {} },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/styles/images/bg.6cfea.jpeg',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>' }
+[2020-01-03T11:37:38.169] [ERROR] cheese - { request:
+   { method: 'GET',
+     url: '/styles/images/bg.6cfea.jpeg',
+     header:
+      { host: 'localhost:8081',
+        connection: 'keep-alive',
+        'user-agent':
+         'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+        accept: 'image/webp,image/apng,image/*,*/*;q=0.8',
+        'sec-fetch-site': 'same-origin',
+        'sec-fetch-mode': 'no-cors',
+        referer: 'http://localhost:8081/styles/0.9dfe5.css',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'zh-CN,zh;q=0.9',
+        cookie: 'remember=false' } },
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header: [Object: null prototype] {} },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/styles/images/bg.6cfea.jpeg',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>' }
+[2020-01-03T11:37:39.592] [ERROR] cheese - { request:
+   { method: 'GET',
+     url: '/styles/images/bg.6cfea.jpeg',
+     header:
+      { host: 'localhost:8081',
+        connection: 'keep-alive',
+        pragma: 'no-cache',
+        'cache-control': 'no-cache',
+        'user-agent':
+         'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+        accept: 'image/webp,image/apng,image/*,*/*;q=0.8',
+        'sec-fetch-site': 'same-origin',
+        'sec-fetch-mode': 'no-cors',
+        referer: 'http://localhost:8081/styles/0.9dfe5.css',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'zh-CN,zh;q=0.9',
+        cookie: 'remember=false' } },
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header: [Object: null prototype] {} },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/styles/images/bg.6cfea.jpeg',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>' }
+[2020-01-03T11:37:39.765] [ERROR] cheese - { request:
+   { method: 'GET',
+     url: '/favicon.ico',
+     header:
+      { host: 'localhost:8081',
+        connection: 'keep-alive',
+        pragma: 'no-cache',
+        'cache-control': 'no-cache',
+        'user-agent':
+         'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+        accept: 'image/webp,image/apng,image/*,*/*;q=0.8',
+        'sec-fetch-site': 'same-origin',
+        'sec-fetch-mode': 'no-cors',
+        referer: 'http://localhost:8081/login',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'zh-CN,zh;q=0.9',
+        cookie: 'remember=false' } },
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header: [Object: null prototype] {} },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/favicon.ico',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>' }
+[2020-01-03T11:37:41.496] [ERROR] cheese - { request:
+   { method: 'GET',
+     url: '/styles/images/bg.6cfea.jpeg',
+     header:
+      { host: 'localhost:8081',
+        connection: 'keep-alive',
+        pragma: 'no-cache',
+        'cache-control': 'no-cache',
+        'user-agent':
+         'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+        accept: 'image/webp,image/apng,image/*,*/*;q=0.8',
+        'sec-fetch-site': 'same-origin',
+        'sec-fetch-mode': 'no-cors',
+        referer: 'http://localhost:8081/styles/0.9dfe5.css',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'zh-CN,zh;q=0.9',
+        cookie: 'remember=false' } },
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header: [Object: null prototype] {} },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/styles/images/bg.6cfea.jpeg',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>' }
+[2020-01-03T11:37:41.611] [ERROR] cheese - { request:
+   { method: 'GET',
+     url: '/favicon.ico',
+     header:
+      { host: 'localhost:8081',
+        connection: 'keep-alive',
+        pragma: 'no-cache',
+        'cache-control': 'no-cache',
+        'user-agent':
+         'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+        accept: 'image/webp,image/apng,image/*,*/*;q=0.8',
+        'sec-fetch-site': 'same-origin',
+        'sec-fetch-mode': 'no-cors',
+        referer: 'http://localhost:8081/login',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'zh-CN,zh;q=0.9',
+        cookie: 'remember=false' } },
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header: [Object: null prototype] {} },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/favicon.ico',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>' }
+[2020-01-03T11:37:47.892] [ERROR] cheese - { request:
+   { method: 'GET',
+     url: '/styles/images/bg.6cfea.jpeg',
+     header:
+      { host: 'localhost:8081',
+        connection: 'keep-alive',
+        'user-agent':
+         'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+        accept: 'image/webp,image/apng,image/*,*/*;q=0.8',
+        'sec-fetch-site': 'same-origin',
+        'sec-fetch-mode': 'no-cors',
+        referer: 'http://localhost:8081/styles/0.9dfe5.css',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'zh-CN,zh;q=0.9',
+        cookie: 'remember=false' } },
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header: [Object: null prototype] {} },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/styles/images/bg.6cfea.jpeg',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>' }
+[2020-01-03T11:37:50.564] [ERROR] cheese - { request:
+   { method: 'GET',
+     url: '/styles/images/bg.6cfea.jpeg',
+     header:
+      { host: 'localhost:8081',
+        connection: 'keep-alive',
+        'user-agent':
+         'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+        accept: 'image/webp,image/apng,image/*,*/*;q=0.8',
+        'sec-fetch-site': 'cross-site',
+        'sec-fetch-mode': 'no-cors',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'zh-CN,zh;q=0.9',
+        cookie: 'remember=false' } },
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header: [Object: null prototype] {} },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/styles/images/bg.6cfea.jpeg',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>' }
+[2020-01-03T11:37:56.963] [ERROR] cheese - { request:
+   { method: 'GET',
+     url: '/styles/images/bg.6cfea.jpeg',
+     header:
+      { host: 'localhost:8081',
+        connection: 'keep-alive',
+        'user-agent':
+         'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+        accept: 'image/webp,image/apng,image/*,*/*;q=0.8',
+        'sec-fetch-site': 'cross-site',
+        'sec-fetch-mode': 'no-cors',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'zh-CN,zh;q=0.9',
+        cookie: 'remember=false' } },
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header: [Object: null prototype] {} },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/styles/images/bg.6cfea.jpeg',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>' }
+[2020-01-03T11:55:01.725] [ERROR] cheese - { request:
+   { method: 'POST',
+     url: '/track/getExamTask',
+     header:
+      { host: 'localhost:8081',
+        connection: 'keep-alive',
+        'content-length': '0',
+        accept: 'application/json, text/plain, */*',
+        origin: 'http://localhost:8081',
+        'x-requested-with': 'XMLHttpRequest',
+        'user-agent':
+         'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+        'content-type': 'application/x-www-form-urlencoded',
+        'sec-fetch-site': 'same-origin',
+        'sec-fetch-mode': 'cors',
+        referer: 'http://localhost:8081/map',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'zh-CN,zh;q=0.9',
+        cookie: 'remember=false' } },
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header: [Object: null prototype] {} },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/track/getExamTask',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>' }
+[2020-01-03T11:55:01.730] [ERROR] cheese - { request:
+   { method: 'POST',
+     url: '/track/getTrackStage',
+     header:
+      { host: 'localhost:8081',
+        connection: 'keep-alive',
+        'content-length': '30',
+        accept: 'application/json, text/plain, */*',
+        origin: 'http://localhost:8081',
+        'x-requested-with': 'XMLHttpRequest',
+        'user-agent':
+         'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+        'content-type': 'application/x-www-form-urlencoded',
+        'sec-fetch-site': 'same-origin',
+        'sec-fetch-mode': 'cors',
+        referer: 'http://localhost:8081/map',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'zh-CN,zh;q=0.9',
+        cookie: 'remember=false' } },
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header: [Object: null prototype] {} },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/track/getTrackStage',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>' }
+[2020-01-03T11:55:04.918] [ERROR] cheese - { request:
+   { method: 'POST',
+     url: '/track/getExamTask',
+     header:
+      { host: 'localhost:8081',
+        connection: 'keep-alive',
+        'content-length': '0',
+        accept: 'application/json, text/plain, */*',
+        origin: 'http://localhost:8081',
+        'x-requested-with': 'XMLHttpRequest',
+        'user-agent':
+         'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+        'content-type': 'application/x-www-form-urlencoded',
+        'sec-fetch-site': 'same-origin',
+        'sec-fetch-mode': 'cors',
+        referer: 'http://localhost:8081/map',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'zh-CN,zh;q=0.9',
+        cookie: 'remember=false' } },
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header: [Object: null prototype] {} },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/track/getExamTask',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>' }
+[2020-01-03T11:55:04.920] [ERROR] cheese - { request:
+   { method: 'POST',
+     url: '/track/getTrackStage',
+     header:
+      { host: 'localhost:8081',
+        connection: 'keep-alive',
+        'content-length': '30',
+        accept: 'application/json, text/plain, */*',
+        origin: 'http://localhost:8081',
+        'x-requested-with': 'XMLHttpRequest',
+        'user-agent':
+         'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+        'content-type': 'application/x-www-form-urlencoded',
+        'sec-fetch-site': 'same-origin',
+        'sec-fetch-mode': 'cors',
+        referer: 'http://localhost:8081/map',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'zh-CN,zh;q=0.9',
+        cookie: 'remember=false' } },
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header: [Object: null prototype] {} },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/track/getTrackStage',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>' }
+[2020-01-03T11:55:05.126] [ERROR] cheese - { request:
+   { method: 'POST',
+     url: '/track/getTrackCount',
+     header:
+      { host: 'localhost:8081',
+        connection: 'keep-alive',
+        'content-length': '42',
+        accept: 'application/json, text/plain, */*',
+        origin: 'http://localhost:8081',
+        'x-requested-with': 'XMLHttpRequest',
+        'user-agent':
+         'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+        'content-type': 'application/x-www-form-urlencoded',
+        'sec-fetch-site': 'same-origin',
+        'sec-fetch-mode': 'cors',
+        referer: 'http://localhost:8081/map',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'zh-CN,zh;q=0.9',
+        cookie: 'remember=false' } },
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header: [Object: null prototype] {} },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/track/getTrackCount',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>' }
+[2020-01-03T11:55:05.128] [ERROR] cheese - { request:
+   { method: 'POST',
+     url: '/track/getOrgTask',
+     header:
+      { host: 'localhost:8081',
+        connection: 'keep-alive',
+        'content-length': '42',
+        accept: 'application/json, text/plain, */*',
+        origin: 'http://localhost:8081',
+        'x-requested-with': 'XMLHttpRequest',
+        'user-agent':
+         'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+        'content-type': 'application/x-www-form-urlencoded',
+        'sec-fetch-site': 'same-origin',
+        'sec-fetch-mode': 'cors',
+        referer: 'http://localhost:8081/map',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'zh-CN,zh;q=0.9',
+        cookie: 'remember=false' } },
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header: [Object: null prototype] {} },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/track/getOrgTask',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>' }
+[2020-01-03T11:55:05.129] [ERROR] cheese - { request:
+   { method: 'POST',
+     url: '/track/getTrackInfo',
+     header:
+      { host: 'localhost:8081',
+        connection: 'keep-alive',
+        'content-length': '42',
+        accept: 'application/json, text/plain, */*',
+        origin: 'http://localhost:8081',
+        'x-requested-with': 'XMLHttpRequest',
+        'user-agent':
+         'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+        'content-type': 'application/x-www-form-urlencoded',
+        'sec-fetch-site': 'same-origin',
+        'sec-fetch-mode': 'cors',
+        referer: 'http://localhost:8081/map',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'zh-CN,zh;q=0.9',
+        cookie: 'remember=false' } },
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header: [Object: null prototype] {} },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/track/getTrackInfo',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>' }
+[2020-01-03T11:55:34.898] [ERROR] cheese - { request:
+   { method: 'POST',
+     url: '/track/getTrackStage',
+     header:
+      { host: 'localhost:8081',
+        connection: 'keep-alive',
+        'content-length': '30',
+        accept: 'application/json, text/plain, */*',
+        origin: 'http://localhost:8081',
+        'x-requested-with': 'XMLHttpRequest',
+        'user-agent':
+         'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+        'content-type': 'application/x-www-form-urlencoded',
+        'sec-fetch-site': 'same-origin',
+        'sec-fetch-mode': 'cors',
+        referer: 'http://localhost:8081/map',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'zh-CN,zh;q=0.9',
+        cookie: 'remember=false' } },
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header: [Object: null prototype] {} },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/track/getTrackStage',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>' }
+[2020-01-03T11:55:34.920] [ERROR] cheese - { request:
+   { method: 'POST',
+     url: '/track/getTrackCount',
+     header:
+      { host: 'localhost:8081',
+        connection: 'keep-alive',
+        'content-length': '42',
+        accept: 'application/json, text/plain, */*',
+        origin: 'http://localhost:8081',
+        'x-requested-with': 'XMLHttpRequest',
+        'user-agent':
+         'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+        'content-type': 'application/x-www-form-urlencoded',
+        'sec-fetch-site': 'same-origin',
+        'sec-fetch-mode': 'cors',
+        referer: 'http://localhost:8081/map',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'zh-CN,zh;q=0.9',
+        cookie: 'remember=false' } },
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header: [Object: null prototype] {} },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/track/getTrackCount',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>' }
+[2020-01-03T11:55:34.921] [ERROR] cheese - { request:
+   { method: 'POST',
+     url: '/track/getOrgTask',
+     header:
+      { host: 'localhost:8081',
+        connection: 'keep-alive',
+        'content-length': '42',
+        accept: 'application/json, text/plain, */*',
+        origin: 'http://localhost:8081',
+        'x-requested-with': 'XMLHttpRequest',
+        'user-agent':
+         'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+        'content-type': 'application/x-www-form-urlencoded',
+        'sec-fetch-site': 'same-origin',
+        'sec-fetch-mode': 'cors',
+        referer: 'http://localhost:8081/map',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'zh-CN,zh;q=0.9',
+        cookie: 'remember=false' } },
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header: [Object: null prototype] {} },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/track/getOrgTask',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>' }
+[2020-01-03T11:55:34.925] [ERROR] cheese - { request:
+   { method: 'POST',
+     url: '/track/getTrackInfo',
+     header:
+      { host: 'localhost:8081',
+        connection: 'keep-alive',
+        'content-length': '42',
+        accept: 'application/json, text/plain, */*',
+        origin: 'http://localhost:8081',
+        'x-requested-with': 'XMLHttpRequest',
+        'user-agent':
+         'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+        'content-type': 'application/x-www-form-urlencoded',
+        'sec-fetch-site': 'same-origin',
+        'sec-fetch-mode': 'cors',
+        referer: 'http://localhost:8081/map',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'zh-CN,zh;q=0.9',
+        cookie: 'remember=false' } },
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header: [Object: null prototype] {} },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/track/getTrackInfo',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>' }
+[2020-01-03T11:55:39.073] [ERROR] cheese - { request:
+   { method: 'POST',
+     url: '/track/getExamTask',
+     header:
+      { host: 'localhost:8081',
+        connection: 'keep-alive',
+        'content-length': '0',
+        accept: 'application/json, text/plain, */*',
+        origin: 'http://localhost:8081',
+        'x-requested-with': 'XMLHttpRequest',
+        'user-agent':
+         'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+        'content-type': 'application/x-www-form-urlencoded',
+        'sec-fetch-site': 'same-origin',
+        'sec-fetch-mode': 'cors',
+        referer: 'http://localhost:8081/map',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'zh-CN,zh;q=0.9',
+        cookie: 'remember=false' } },
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header: [Object: null prototype] {} },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/track/getExamTask',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>' }
+[2020-01-03T11:55:39.075] [ERROR] cheese - { request:
+   { method: 'POST',
+     url: '/track/getTrackStage',
+     header:
+      { host: 'localhost:8081',
+        connection: 'keep-alive',
+        'content-length': '30',
+        accept: 'application/json, text/plain, */*',
+        origin: 'http://localhost:8081',
+        'x-requested-with': 'XMLHttpRequest',
+        'user-agent':
+         'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+        'content-type': 'application/x-www-form-urlencoded',
+        'sec-fetch-site': 'same-origin',
+        'sec-fetch-mode': 'cors',
+        referer: 'http://localhost:8081/map',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'zh-CN,zh;q=0.9',
+        cookie: 'remember=false' } },
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header: [Object: null prototype] {} },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/track/getTrackStage',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>' }
+[2020-01-03T11:55:39.316] [ERROR] cheese - { request:
+   { method: 'POST',
+     url: '/track/getTrackCount',
+     header:
+      { host: 'localhost:8081',
+        connection: 'keep-alive',
+        'content-length': '42',
+        accept: 'application/json, text/plain, */*',
+        origin: 'http://localhost:8081',
+        'x-requested-with': 'XMLHttpRequest',
+        'user-agent':
+         'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+        'content-type': 'application/x-www-form-urlencoded',
+        'sec-fetch-site': 'same-origin',
+        'sec-fetch-mode': 'cors',
+        referer: 'http://localhost:8081/map',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'zh-CN,zh;q=0.9',
+        cookie: 'remember=false' } },
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header: [Object: null prototype] {} },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/track/getTrackCount',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>' }
+[2020-01-03T11:55:39.318] [ERROR] cheese - { request:
+   { method: 'POST',
+     url: '/track/getOrgTask',
+     header:
+      { host: 'localhost:8081',
+        connection: 'keep-alive',
+        'content-length': '42',
+        accept: 'application/json, text/plain, */*',
+        origin: 'http://localhost:8081',
+        'x-requested-with': 'XMLHttpRequest',
+        'user-agent':
+         'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+        'content-type': 'application/x-www-form-urlencoded',
+        'sec-fetch-site': 'same-origin',
+        'sec-fetch-mode': 'cors',
+        referer: 'http://localhost:8081/map',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'zh-CN,zh;q=0.9',
+        cookie: 'remember=false' } },
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header: [Object: null prototype] {} },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/track/getOrgTask',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>' }
+[2020-01-03T11:55:39.320] [ERROR] cheese - { request:
+   { method: 'POST',
+     url: '/track/getTrackInfo',
+     header:
+      { host: 'localhost:8081',
+        connection: 'keep-alive',
+        'content-length': '42',
+        accept: 'application/json, text/plain, */*',
+        origin: 'http://localhost:8081',
+        'x-requested-with': 'XMLHttpRequest',
+        'user-agent':
+         'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+        'content-type': 'application/x-www-form-urlencoded',
+        'sec-fetch-site': 'same-origin',
+        'sec-fetch-mode': 'cors',
+        referer: 'http://localhost:8081/map',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'zh-CN,zh;q=0.9',
+        cookie: 'remember=false' } },
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header: [Object: null prototype] {} },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/track/getTrackInfo',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>' }
+[2020-01-03T14:03:56.416] [ERROR] cheese - { request:
+   { method: 'POST',
+     url: '/track/getExamTask',
+     header:
+      { host: 'localhost:8081',
+        connection: 'keep-alive',
+        'content-length': '0',
+        accept: 'application/json, text/plain, */*',
+        origin: 'http://localhost:8081',
+        'x-requested-with': 'XMLHttpRequest',
+        'user-agent':
+         'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+        'content-type': 'application/x-www-form-urlencoded',
+        'sec-fetch-site': 'same-origin',
+        'sec-fetch-mode': 'cors',
+        referer: 'http://localhost:8081/map',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'zh-CN,zh;q=0.9',
+        cookie: 'remember=false' } },
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header: [Object: null prototype] {} },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/track/getExamTask',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>' }
+[2020-01-03T14:03:56.419] [ERROR] cheese - { request:
+   { method: 'POST',
+     url: '/track/getTrackStage',
+     header:
+      { host: 'localhost:8081',
+        connection: 'keep-alive',
+        'content-length': '30',
+        accept: 'application/json, text/plain, */*',
+        origin: 'http://localhost:8081',
+        'x-requested-with': 'XMLHttpRequest',
+        'user-agent':
+         'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+        'content-type': 'application/x-www-form-urlencoded',
+        'sec-fetch-site': 'same-origin',
+        'sec-fetch-mode': 'cors',
+        referer: 'http://localhost:8081/map',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'zh-CN,zh;q=0.9',
+        cookie: 'remember=false' } },
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header: [Object: null prototype] {} },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/track/getTrackStage',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>' }
+[2020-01-03T14:03:56.621] [ERROR] cheese - { request:
+   { method: 'POST',
+     url: '/track/getTrackCount',
+     header:
+      { host: 'localhost:8081',
+        connection: 'keep-alive',
+        'content-length': '42',
+        accept: 'application/json, text/plain, */*',
+        origin: 'http://localhost:8081',
+        'x-requested-with': 'XMLHttpRequest',
+        'user-agent':
+         'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+        'content-type': 'application/x-www-form-urlencoded',
+        'sec-fetch-site': 'same-origin',
+        'sec-fetch-mode': 'cors',
+        referer: 'http://localhost:8081/map',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'zh-CN,zh;q=0.9',
+        cookie: 'remember=false' } },
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header: [Object: null prototype] {} },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/track/getTrackCount',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>' }
+[2020-01-03T14:03:56.623] [ERROR] cheese - { request:
+   { method: 'POST',
+     url: '/track/getOrgTask',
+     header:
+      { host: 'localhost:8081',
+        connection: 'keep-alive',
+        'content-length': '42',
+        accept: 'application/json, text/plain, */*',
+        origin: 'http://localhost:8081',
+        'x-requested-with': 'XMLHttpRequest',
+        'user-agent':
+         'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+        'content-type': 'application/x-www-form-urlencoded',
+        'sec-fetch-site': 'same-origin',
+        'sec-fetch-mode': 'cors',
+        referer: 'http://localhost:8081/map',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'zh-CN,zh;q=0.9',
+        cookie: 'remember=false' } },
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header: [Object: null prototype] {} },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/track/getOrgTask',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>' }
+[2020-01-03T14:03:56.624] [ERROR] cheese - { request:
+   { method: 'POST',
+     url: '/track/getTrackInfo',
+     header:
+      { host: 'localhost:8081',
+        connection: 'keep-alive',
+        'content-length': '42',
+        accept: 'application/json, text/plain, */*',
+        origin: 'http://localhost:8081',
+        'x-requested-with': 'XMLHttpRequest',
+        'user-agent':
+         'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+        'content-type': 'application/x-www-form-urlencoded',
+        'sec-fetch-site': 'same-origin',
+        'sec-fetch-mode': 'cors',
+        referer: 'http://localhost:8081/map',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'zh-CN,zh;q=0.9',
+        cookie: 'remember=false' } },
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header: [Object: null prototype] {} },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/track/getTrackInfo',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>' }
+[2020-01-03T14:17:16.351] [ERROR] cheese - { request:
+   { method: 'GET',
+     url: '/favicon.ico',
+     header:
+      { host: 'localhost:8081',
+        connection: 'keep-alive',
+        pragma: 'no-cache',
+        'cache-control': 'no-cache',
+        'user-agent':
+         'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+        accept: 'image/webp,image/apng,image/*,*/*;q=0.8',
+        'sec-fetch-site': 'same-origin',
+        'sec-fetch-mode': 'no-cors',
+        referer: 'http://localhost:8081/report',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'zh-CN,zh;q=0.9',
+        cookie: 'remember=false' } },
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header: [Object: null prototype] {} },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/favicon.ico',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>' }
+[2020-01-03T14:17:17.240] [ERROR] cheese - { request:
+   { method: 'GET',
+     url: '/favicon.ico',
+     header:
+      { host: 'localhost:8081',
+        connection: 'keep-alive',
+        pragma: 'no-cache',
+        'cache-control': 'no-cache',
+        'user-agent':
+         'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+        accept: 'image/webp,image/apng,image/*,*/*;q=0.8',
+        'sec-fetch-site': 'same-origin',
+        'sec-fetch-mode': 'no-cors',
+        referer: 'http://localhost:8081/report',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'zh-CN,zh;q=0.9',
+        cookie: 'remember=false' } },
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header: [Object: null prototype] {} },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/favicon.ico',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>' }
+[2020-01-03T14:18:02.041] [ERROR] cheese - { request:
+   { method: 'GET',
+     url: '/styles/images/bg.6cfea.jpeg',
+     header:
+      { host: 'localhost:8081',
+        connection: 'keep-alive',
+        'user-agent':
+         'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+        accept: 'image/webp,image/apng,image/*,*/*;q=0.8',
+        'sec-fetch-site': 'same-origin',
+        'sec-fetch-mode': 'no-cors',
+        referer: 'http://localhost:8081/styles/0.9c8e6.css',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'zh-CN,zh;q=0.9',
+        cookie: 'remember=false' } },
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header: [Object: null prototype] {} },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/styles/images/bg.6cfea.jpeg',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>' }
+[2020-01-03T14:18:04.941] [ERROR] cheese - { request:
+   { method: 'GET',
+     url: '/styles/images/bg.6cfea.jpeg',
+     header:
+      { host: 'localhost:8081',
+        connection: 'keep-alive',
+        'user-agent':
+         'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+        accept: 'image/webp,image/apng,image/*,*/*;q=0.8',
+        'sec-fetch-site': 'same-origin',
+        'sec-fetch-mode': 'no-cors',
+        referer: 'http://localhost:8081/styles/0.9c8e6.css',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'zh-CN,zh;q=0.9',
+        cookie: 'remember=false' } },
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header: [Object: null prototype] {} },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/styles/images/bg.6cfea.jpeg',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>' }
+[2020-01-03T14:18:06.633] [ERROR] cheese - { request:
+   { method: 'GET',
+     url: '/styles/images/bg.6cfea.jpeg',
+     header:
+      { host: 'localhost:8081',
+        connection: 'keep-alive',
+        'user-agent':
+         'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+        accept: 'image/webp,image/apng,image/*,*/*;q=0.8',
+        'sec-fetch-site': 'same-origin',
+        'sec-fetch-mode': 'no-cors',
+        referer: 'http://localhost:8081/styles/0.9c8e6.css',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'zh-CN,zh;q=0.9',
+        cookie: 'remember=false' } },
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header: [Object: null prototype] {} },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/styles/images/bg.6cfea.jpeg',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>' }
+[2020-01-03T14:18:17.390] [ERROR] cheese - { request:
+   { method: 'GET',
+     url: '/styles/images/bg.6cfea.jpeg',
+     header:
+      { host: 'localhost:8081',
+        connection: 'keep-alive',
+        'user-agent':
+         'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+        accept: 'image/webp,image/apng,image/*,*/*;q=0.8',
+        'sec-fetch-site': 'same-origin',
+        'sec-fetch-mode': 'no-cors',
+        referer: 'http://localhost:8081/styles/0.9c8e6.css',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'zh-CN,zh;q=0.9',
+        cookie: 'remember=false' } },
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header: [Object: null prototype] {} },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/styles/images/bg.6cfea.jpeg',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>' }
+[2020-01-03T14:18:29.001] [ERROR] cheese - { request:
+   { method: 'GET',
+     url: '/styles/images/bg.6cfea.jpeg',
+     header:
+      { host: 'localhost:8081',
+        connection: 'keep-alive',
+        'user-agent':
+         'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+        accept: 'image/webp,image/apng,image/*,*/*;q=0.8',
+        'sec-fetch-site': 'same-origin',
+        'sec-fetch-mode': 'no-cors',
+        referer: 'http://localhost:8081/styles/0.9c8e6.css',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'zh-CN,zh;q=0.9',
+        cookie: 'remember=false' } },
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header: [Object: null prototype] {} },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/styles/images/bg.6cfea.jpeg',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>' }
+[2020-01-03T14:18:31.343] [ERROR] cheese - { request:
+   { method: 'GET',
+     url: '/styles/images/bg.6cfea.jpeg',
+     header:
+      { host: 'localhost:8081',
+        connection: 'keep-alive',
+        'user-agent':
+         'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+        accept: 'image/webp,image/apng,image/*,*/*;q=0.8',
+        'sec-fetch-site': 'same-origin',
+        'sec-fetch-mode': 'no-cors',
+        referer: 'http://localhost:8081/styles/0.9c8e6.css',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'zh-CN,zh;q=0.9',
+        cookie: 'remember=false' } },
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header: [Object: null prototype] {} },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/styles/images/bg.6cfea.jpeg',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>' }
+[2020-01-03T14:18:32.208] [ERROR] cheese - { request:
+   { method: 'GET',
+     url: '/styles/images/bg.6cfea.jpeg',
+     header:
+      { host: 'localhost:8081',
+        connection: 'keep-alive',
+        'user-agent':
+         'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+        accept: 'image/webp,image/apng,image/*,*/*;q=0.8',
+        'sec-fetch-site': 'same-origin',
+        'sec-fetch-mode': 'no-cors',
+        referer: 'http://localhost:8081/styles/0.9c8e6.css',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'zh-CN,zh;q=0.9',
+        cookie: 'remember=false' } },
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header: [Object: null prototype] {} },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/styles/images/bg.6cfea.jpeg',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>' }
+[2020-01-03T14:18:32.784] [ERROR] cheese - { request:
+   { method: 'GET',
+     url: '/styles/images/bg.6cfea.jpeg',
+     header:
+      { host: 'localhost:8081',
+        connection: 'keep-alive',
+        'user-agent':
+         'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+        accept: 'image/webp,image/apng,image/*,*/*;q=0.8',
+        'sec-fetch-site': 'same-origin',
+        'sec-fetch-mode': 'no-cors',
+        referer: 'http://localhost:8081/styles/0.9c8e6.css',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'zh-CN,zh;q=0.9',
+        cookie: 'remember=false' } },
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header: [Object: null prototype] {} },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/styles/images/bg.6cfea.jpeg',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>' }
+[2020-01-03T14:18:33.063] [ERROR] cheese - { request:
+   { method: 'GET',
+     url: '/styles/images/bg.6cfea.jpeg',
+     header:
+      { host: 'localhost:8081',
+        connection: 'keep-alive',
+        'user-agent':
+         'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+        accept: 'image/webp,image/apng,image/*,*/*;q=0.8',
+        'sec-fetch-site': 'same-origin',
+        'sec-fetch-mode': 'no-cors',
+        referer: 'http://localhost:8081/styles/0.9c8e6.css',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'zh-CN,zh;q=0.9',
+        cookie: 'remember=false' } },
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header: [Object: null prototype] {} },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/styles/images/bg.6cfea.jpeg',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>' }
+[2020-01-03T14:18:33.424] [ERROR] cheese - { request:
+   { method: 'GET',
+     url: '/styles/images/bg.6cfea.jpeg',
+     header:
+      { host: 'localhost:8081',
+        connection: 'keep-alive',
+        'user-agent':
+         'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+        accept: 'image/webp,image/apng,image/*,*/*;q=0.8',
+        'sec-fetch-site': 'same-origin',
+        'sec-fetch-mode': 'no-cors',
+        referer: 'http://localhost:8081/styles/0.9c8e6.css',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'zh-CN,zh;q=0.9',
+        cookie: 'remember=false' } },
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header: [Object: null prototype] {} },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/styles/images/bg.6cfea.jpeg',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>' }
+[2020-01-03T14:18:33.648] [ERROR] cheese - { request:
+   { method: 'GET',
+     url: '/styles/images/bg.6cfea.jpeg',
+     header:
+      { host: 'localhost:8081',
+        connection: 'keep-alive',
+        'user-agent':
+         'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+        accept: 'image/webp,image/apng,image/*,*/*;q=0.8',
+        'sec-fetch-site': 'same-origin',
+        'sec-fetch-mode': 'no-cors',
+        referer: 'http://localhost:8081/styles/0.9c8e6.css',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'zh-CN,zh;q=0.9',
+        cookie: 'remember=false' } },
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header: [Object: null prototype] {} },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/styles/images/bg.6cfea.jpeg',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>' }
+[2020-01-03T14:18:33.979] [ERROR] cheese - { request:
+   { method: 'GET',
+     url: '/styles/images/bg.6cfea.jpeg',
+     header:
+      { host: 'localhost:8081',
+        connection: 'keep-alive',
+        'user-agent':
+         'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+        accept: 'image/webp,image/apng,image/*,*/*;q=0.8',
+        'sec-fetch-site': 'same-origin',
+        'sec-fetch-mode': 'no-cors',
+        referer: 'http://localhost:8081/styles/0.9c8e6.css',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'zh-CN,zh;q=0.9',
+        cookie: 'remember=false' } },
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header: [Object: null prototype] {} },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/styles/images/bg.6cfea.jpeg',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>' }
+[2020-01-03T14:40:07.500] [ERROR] cheese - { request:
+   { method: 'GET',
+     url: '/styles/images/bg.6cfea.jpeg',
+     header:
+      { host: 'localhost:8081',
+        connection: 'keep-alive',
+        'user-agent':
+         'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+        accept: 'image/webp,image/apng,image/*,*/*;q=0.8',
+        'sec-fetch-site': 'same-origin',
+        'sec-fetch-mode': 'no-cors',
+        referer: 'http://localhost:8081/styles/0.e69bf.css',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'zh-CN,zh;q=0.9',
+        cookie: 'remember=false' } },
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header: [Object: null prototype] {} },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/styles/images/bg.6cfea.jpeg',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>' }
+[2020-01-03T14:40:12.391] [ERROR] cheese - { request:
+   { method: 'GET',
+     url: '/styles/images/bg.6cfea.jpeg',
+     header:
+      { host: 'localhost:8081',
+        connection: 'keep-alive',
+        'user-agent':
+         'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+        accept: 'image/webp,image/apng,image/*,*/*;q=0.8',
+        'sec-fetch-site': 'same-origin',
+        'sec-fetch-mode': 'no-cors',
+        referer: 'http://localhost:8081/styles/0.e69bf.css',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'zh-CN,zh;q=0.9',
+        cookie: 'remember=false' } },
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header: [Object: null prototype] {} },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/styles/images/bg.6cfea.jpeg',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>' }
+[2020-01-03T14:40:15.125] [ERROR] cheese - { request:
+   { method: 'GET',
+     url: '/styles/images/bg.6cfea.jpeg',
+     header:
+      { host: 'localhost:8081',
+        connection: 'keep-alive',
+        'user-agent':
+         'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+        accept: 'image/webp,image/apng,image/*,*/*;q=0.8',
+        'sec-fetch-site': 'same-origin',
+        'sec-fetch-mode': 'no-cors',
+        referer: 'http://localhost:8081/styles/0.e69bf.css',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'zh-CN,zh;q=0.9',
+        cookie: 'remember=false' } },
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header: [Object: null prototype] {} },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/styles/images/bg.6cfea.jpeg',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>' }
+[2020-01-03T14:54:10.785] [ERROR] cheese - Error: Minified React error #321; visit https://reactjs.org/docs/error-decoder.html?invariant=321 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+    at F (E:\京城一灯\实战\react-ts-template\src\server\assets\server-entry.js:19:4001)
+    at useState (E:\京城一灯\实战\react-ts-template\src\server\assets\server-entry.js:19:5367)
+    at component (E:\京城一灯\实战\react-ts-template\src\server\assets\server-entry.js:43:22489)
+    at processChild (E:\京城一灯\实战\react-ts-template\node_modules\react-dom\cjs\react-dom-server.node.development.js:3206:14)
+    at resolve (E:\京城一灯\实战\react-ts-template\node_modules\react-dom\cjs\react-dom-server.node.development.js:3126:5)
+    at ReactDOMServerRenderer.render (E:\京城一灯\实战\react-ts-template\node_modules\react-dom\cjs\react-dom-server.node.development.js:3600:22)
+    at ReactDOMServerRenderer.read (E:\京城一灯\实战\react-ts-template\node_modules\react-dom\cjs\react-dom-server.node.development.js:3538:29)
+    at Object.renderToString (E:\京城一灯\实战\react-ts-template\node_modules\react-dom\cjs\react-dom-server.node.development.js:4247:27)
+    at LoginController.<anonymous> (E:\京城一灯\实战\react-ts-template\src\server\controller\ReportController.ts:13:38)
+    at step (E:\京城一灯\实战\react-ts-template\src\server\controller\ReportController.ts:42:23)
+[2020-01-03T14:54:13.110] [ERROR] cheese - Error: Minified React error #321; visit https://reactjs.org/docs/error-decoder.html?invariant=321 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+    at F (E:\京城一灯\实战\react-ts-template\src\server\assets\server-entry.js:19:4001)
+    at useState (E:\京城一灯\实战\react-ts-template\src\server\assets\server-entry.js:19:5367)
+    at component (E:\京城一灯\实战\react-ts-template\src\server\assets\server-entry.js:43:22489)
+    at processChild (E:\京城一灯\实战\react-ts-template\node_modules\react-dom\cjs\react-dom-server.node.development.js:3206:14)
+    at resolve (E:\京城一灯\实战\react-ts-template\node_modules\react-dom\cjs\react-dom-server.node.development.js:3126:5)
+    at ReactDOMServerRenderer.render (E:\京城一灯\实战\react-ts-template\node_modules\react-dom\cjs\react-dom-server.node.development.js:3600:22)
+    at ReactDOMServerRenderer.read (E:\京城一灯\实战\react-ts-template\node_modules\react-dom\cjs\react-dom-server.node.development.js:3538:29)
+    at Object.renderToString (E:\京城一灯\实战\react-ts-template\node_modules\react-dom\cjs\react-dom-server.node.development.js:4247:27)
+    at LoginController.<anonymous> (E:\京城一灯\实战\react-ts-template\src\server\controller\ReportController.ts:13:38)
+    at step (E:\京城一灯\实战\react-ts-template\src\server\controller\ReportController.ts:42:23)
+[2020-01-03T15:09:49.189] [ERROR] cheese - { request:
+   { method: 'GET',
+     url: '/styles/images/bg.6cfea.jpeg',
+     header:
+      { host: 'localhost:8081',
+        connection: 'keep-alive',
+        'user-agent':
+         'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+        accept: 'image/webp,image/apng,image/*,*/*;q=0.8',
+        'sec-fetch-site': 'same-origin',
+        'sec-fetch-mode': 'no-cors',
+        referer: 'http://localhost:8081/styles/0.677b2.css',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'zh-CN,zh;q=0.9',
+        cookie: 'remember=false' } },
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header: [Object: null prototype] {} },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/styles/images/bg.6cfea.jpeg',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>' }
+[2020-01-03T15:09:49.296] [ERROR] cheese - { request:
+   { method: 'GET',
+     url: '/favicon.ico',
+     header:
+      { host: 'localhost:8081',
+        connection: 'keep-alive',
+        'user-agent':
+         'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+        accept: 'image/webp,image/apng,image/*,*/*;q=0.8',
+        'sec-fetch-site': 'same-origin',
+        'sec-fetch-mode': 'no-cors',
+        referer: 'http://localhost:8081/login',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'zh-CN,zh;q=0.9',
+        cookie: 'remember=false' } },
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header: [Object: null prototype] {} },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/favicon.ico',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>' }
+[2020-01-03T15:25:04.697] [ERROR] cheese - { request:
+   { method: 'GET',
+     url: '/styles/images/bg.6cfea.jpeg',
+     header:
+      { host: 'localhost:8081',
+        connection: 'keep-alive',
+        'user-agent':
+         'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+        accept: 'image/webp,image/apng,image/*,*/*;q=0.8',
+        'sec-fetch-site': 'same-origin',
+        'sec-fetch-mode': 'no-cors',
+        referer: 'http://localhost:8081/styles/0.677b2.css',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'zh-CN,zh;q=0.9',
+        cookie: 'remember=false' } },
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header: [Object: null prototype] {} },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/styles/images/bg.6cfea.jpeg',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>' }
+[2020-01-03T15:25:06.592] [ERROR] cheese - { request:
+   { method: 'GET',
+     url: '/styles/images/bg.6cfea.jpeg',
+     header:
+      { host: 'localhost:8081',
+        connection: 'keep-alive',
+        'user-agent':
+         'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+        accept: 'image/webp,image/apng,image/*,*/*;q=0.8',
+        'sec-fetch-site': 'same-origin',
+        'sec-fetch-mode': 'no-cors',
+        referer: 'http://localhost:8081/styles/0.677b2.css',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'zh-CN,zh;q=0.9',
+        cookie: 'remember=false' } },
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header: [Object: null prototype] {} },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/styles/images/bg.6cfea.jpeg',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>' }
+[2020-01-03T15:25:10.874] [ERROR] cheese - { request:
+   { method: 'GET',
+     url: '/styles/images/bg.6cfea.jpeg',
+     header:
+      { host: 'localhost:8081',
+        connection: 'keep-alive',
+        'user-agent':
+         'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+        accept: 'image/webp,image/apng,image/*,*/*;q=0.8',
+        'sec-fetch-site': 'same-origin',
+        'sec-fetch-mode': 'no-cors',
+        referer: 'http://localhost:8081/styles/0.677b2.css',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'zh-CN,zh;q=0.9',
+        cookie: 'remember=false' } },
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header: [Object: null prototype] {} },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/styles/images/bg.6cfea.jpeg',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>' }
+[2020-01-03T15:26:42.608] [ERROR] cheese - { request:
+   { method: 'GET',
+     url: '/styles/images/bg.6cfea.jpeg',
+     header:
+      { host: 'localhost:8081',
+        connection: 'keep-alive',
+        'user-agent':
+         'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+        accept: 'image/webp,image/apng,image/*,*/*;q=0.8',
+        'sec-fetch-site': 'same-origin',
+        'sec-fetch-mode': 'no-cors',
+        referer: 'http://localhost:8081/styles/0.677b2.css',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'zh-CN,zh;q=0.9',
+        cookie: 'remember=false' } },
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header: [Object: null prototype] {} },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/styles/images/bg.6cfea.jpeg',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>' }
+[2020-01-06T14:24:50.242] [ERROR] cheese - { request:
+   { method: 'GET',
+     url: '/favicon.ico',
+     header:
+      { host: 'localhost:8081',
+        connection: 'keep-alive',
+        pragma: 'no-cache',
+        'cache-control': 'no-cache',
+        'user-agent':
+         'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+        accept: 'image/webp,image/apng,image/*,*/*;q=0.8',
+        'sec-fetch-site': 'same-origin',
+        'sec-fetch-mode': 'no-cors',
+        referer: 'http://localhost:8081/report',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'zh-CN,zh;q=0.9',
+        cookie: 'remember=false' } },
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header: [Object: null prototype] {} },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/favicon.ico',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>' }
