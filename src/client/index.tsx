@@ -3,7 +3,8 @@ import * as ReactDOM from "react-dom";
 import Routes from "./routers";
 import "@assets/styles/common.css";
 import { BrowserRouter } from "react-router-dom";
-import { message } from 'antd';
+import { message, ConfigProvider } from 'antd';
+import zhCN from 'antd/es/locale/zh_CN';
 import ErrorBoundary from '@components/Error'
 
 
@@ -14,7 +15,9 @@ const App = () => {
   return (
     <ErrorBoundary>
       <BrowserRouter basename="/">
-        {Routes}
+        <ConfigProvider locale={zhCN}>
+          {Routes}
+        </ConfigProvider>
       </BrowserRouter>
     </ErrorBoundary>
   )

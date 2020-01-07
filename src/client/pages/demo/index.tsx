@@ -1,8 +1,9 @@
 import * as React from 'react';
 import Template from '@components/Template';
+import { config } from './config';
 
-const Demo = () => (
-  <Template />
-);
+// const Demo = () => (
+//   Template(config)
+// );
 
-export default Demo;
+export default Template;
