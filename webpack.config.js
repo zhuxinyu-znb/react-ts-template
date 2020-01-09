@@ -59,6 +59,7 @@ const webpackConfig = {
     },
     externals: {
             'AMap': 'AMap',
+            'echarts': 'echarts',
         },
     module: {
         rules: [
