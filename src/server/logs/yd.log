@@ -1947,3 +1947,102 @@ See https://fb.me/react-invalid-hook-call for tips about how to debug and fix th
   req: '<original node req>',
   res: '<original node res>',
   socket: '<original node socket>' }
+[2020-01-08T14:33:56.862] [ERROR] cheese - { request:
+   { method: 'GET',
+     url: '/styles/images/bg.6cfea.jpeg',
+     header:
+      { host: 'localhost:8081',
+        connection: 'keep-alive',
+        'user-agent':
+         'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+        accept: 'image/webp,image/apng,image/*,*/*;q=0.8',
+        'sec-fetch-site': 'same-origin',
+        'sec-fetch-mode': 'no-cors',
+        referer: 'http://localhost:8081/styles/0.e69bf.css',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'zh-CN,zh;q=0.9',
+        cookie: 'remember=false' } },
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header: [Object: null prototype] {} },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/styles/images/bg.6cfea.jpeg',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>' }
+[2020-01-08T14:33:56.987] [ERROR] cheese - { request:
+   { method: 'GET',
+     url: '/favicon.ico',
+     header:
+      { host: 'localhost:8081',
+        connection: 'keep-alive',
+        'user-agent':
+         'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+        accept: 'image/webp,image/apng,image/*,*/*;q=0.8',
+        'sec-fetch-site': 'same-origin',
+        'sec-fetch-mode': 'no-cors',
+        referer: 'http://localhost:8081/login',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'zh-CN,zh;q=0.9',
+        cookie: 'remember=false' } },
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header: [Object: null prototype] {} },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/favicon.ico',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>' }
+[2020-01-09T15:53:24.467] [ERROR] cheese - { request:
+   { method: 'GET',
+     url: '/favicon.ico',
+     header:
+      { cookie: 'remember=false',
+        'accept-language': 'zh-CN,zh;q=0.9',
+        'accept-encoding': 'gzip, deflate, br',
+        referer: 'http://localhost:3000/login',
+        'sec-fetch-mode': 'no-cors',
+        'sec-fetch-site': 'same-origin',
+        accept: 'image/webp,image/apng,image/*,*/*;q=0.8',
+        'user-agent':
+         'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+        connection: 'close',
+        host: 'localhost:3000' } },
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header: [Object: null prototype] {} },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/favicon.ico',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>' }
+[2020-01-09T15:53:49.256] [ERROR] cheese - { request:
+   { method: 'GET',
+     url: '/api/demo',
+     header:
+      { cookie: 'remember=false',
+        'accept-language': 'zh-CN,zh;q=0.9',
+        'accept-encoding': 'gzip, deflate, br',
+        'sec-fetch-mode': 'navigate',
+        'sec-fetch-site': 'none',
+        accept:
+         'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+        'sec-fetch-user': '?1',
+        'user-agent':
+         'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+        'upgrade-insecure-requests': '1',
+        'cache-control': 'max-age=0',
+        connection: 'close',
+        host: 'localhost:3000' } },
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header: [Object: null prototype] {} },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/api/demo',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>' }

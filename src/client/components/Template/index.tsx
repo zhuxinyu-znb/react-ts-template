@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { Table, Divider, Tag } from 'antd';
 import { ColumnProps } from 'antd/es/table';
+import axios from 'axios';
 
 import { IConfig } from '@interface/IConfig';
 import {pageReducer} from '@models/demoReducer';
@@ -17,16 +18,50 @@ interface ITable {
   tags: string[];
 }
 
+// 页面全局控制的变量————请求页面信息时所需的参数
+interface IReducer {
+  pageNumber: string;
+  pageSize: string;
+}
+
 // 分页样式配置
 const paginationConfig = {
   showTotal: total => `共 ${total} 条`, 
   showQuickJumper: true,
 }
 
-export const PageContext = React.createContext(null);
+const initPage: IReducer = {
+  pageNumber: '1',
+  pageSize: '10'
+}
 
+export const PageContext = React.createContext(null);
+const data: ITable[] = [
+  {
+    key: '1',
+    name: 'John Brown',
+    age: '32',
+    address: 'New York No. 1 Lake Park',
+    tags: ['nice', 'developer'],
+  },
+  {
+    key: '2',
+    name: 'Jim Green',
+    age: '42',
+    address: 'London No. 1 Lake Park',
+    tags: ['loser'],
+  },
+  {
+    key: '3',
+    name: 'Joe Black',
+    age: '42',
+    address: 'Sidney No. 1 Lake Park',
+    tags: ['cool', 'teacher'],
+  },
+];
 const Template = function () {
-  const [pageState, pageDispatch] = useReducer(pageReducer, {stagecode: 0});
+  const [pageState, pageDispatch] = useReducer(pageReducer, initPage);
+  const [tableState, setTableState] = useState(data);
 
   const columns: ColumnProps<ITable>[] = [
     {
@@ -78,29 +113,19 @@ const Template = function () {
     },
   ];
 
-  const data: ITable[] = [
-    {
-      key: '1',
-      name: 'John Brown',
-      age: '32',
-      address: 'New York No. 1 Lake Park',
-      tags: ['nice', 'developer'],
-    },
-    {
-      key: '2',
-      name: 'Jim Green',
-      age: '42',
-      address: 'London No. 1 Lake Park',
-      tags: ['loser'],
-    },
-    {
-      key: '3',
-      name: 'Joe Black',
-      age: '42',
-      address: 'Sidney No. 1 Lake Park',
-      tags: ['cool', 'teacher'],
-    },
-  ];
+  
+  // 获取数据方法
+  const getDate = async () => {
+    const data = await axios.post('/test/demo');
+    console.log(data);
+    setTableState(data);
+  }
+
+  // 发起后台请求
+  useEffect(() => {
+    getDate();
+  }, [])
+
   return (
     <PageContext.Provider value={{ pageState, dispatch: pageDispatch }}>
       <div className="jyd-title-container">
@@ -109,7 +134,7 @@ const Template = function () {
       <div className="jyd-filter-container">
         全部
       </div>
-      <Table columns={columns} dataSource={data} pagination={paginationConfig}/>
+      <Table columns={columns} dataSource={tableState} pagination={paginationConfig}/>
     </PageContext.Provider>
   )
 }

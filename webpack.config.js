@@ -14,8 +14,9 @@ const env = require('./config/env')[_mode];/* ********************************* 
 const cssLoaders = require('./config/cssLoaders.js')/* ***************** 引入css-loader配置 */
 const HardSourceWebpackPlugin = require('hard-source-webpack-plugin');/* 缓存第三方库文件，dll的升级版本 */
 const HappyPack = require('happypack')/* ******************************* 多线程打包，项目越大效果越明显 */
-const os = require('os')
-const happyThreadPool = HappyPack.ThreadPool({ size: os.cpus().length })
+const os = require('os');
+const happyThreadPool = HappyPack.ThreadPool({ size: os.cpus().length });
+const webpack = require('webpack');
 const baseCssLoaders = _isDev ? ['style-loader'] : [{
     loader: MiniCSSExtractPlugin.loader,
 }]
@@ -75,7 +76,8 @@ const webpackConfig = {
                 exclude: /node_modules/,
                 use: [
                     {
-                        loader: 'happypack/loader?id=happy-babel-js',
+                        // loader:'happypack/loader?id=happy-babel-js'
+                        loader:_isDev ? 'babel-loader': 'happypack/loader?id=happy-babel-js'
                         /* options: {
                             plugins: _isDev ? ['dynamic-import-node'] : []
                         } */
@@ -124,17 +126,18 @@ const webpackConfig = {
     },
     plugins: [
         new CleanWebpackPlugin(),
+        new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/),
+        new HappyPack({
+            id: 'happy-babel-js',
+            loaders: ['babel-loader?cacheDirectory=true'],
+            threadPool: happyThreadPool
+        }),
         new MiniCSSExtractPlugin({
             filename: _isDev ? 'styles/[name].css' : 'styles/[name].[hash:5].css',
             chunkFilename: _isDev ? 'styles/[id].css' : 'styles/[id].[hash:5].css'
         }),
         new ManifestPlugin(),
         new ProgressBarPlugin(),
-        new HappyPack({
-            id: 'happy-babel-js',
-            loaders: ['babel-loader?cacheDirectory=true'],
-            threadPool: happyThreadPool
-        }),
         new HardSourceWebpackPlugin()
     ]
 }

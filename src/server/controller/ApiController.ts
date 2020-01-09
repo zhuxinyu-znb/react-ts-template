@@ -1,5 +1,5 @@
 import * as Router from "koa-router";
-import { route, GET } from "awilix-koa";
+import { route, GET, POST } from "awilix-koa";
 import { IApi } from "../interface/IApi";
 
 @route("/api")
@@ -19,12 +19,12 @@ export default class ApiController {
     );
     ctx.body = result;
   }
-  @route("/num")
+  @route("/demo")
   @GET()
   private async test1(
     ctx: Router.IRouterContext,
     next: () => Promise<any>
   ): Promise<any> {
-    ctx.response.body = 222233332;
+    ctx.body = '222233332';
   }
 }

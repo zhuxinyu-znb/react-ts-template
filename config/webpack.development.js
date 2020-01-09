@@ -3,25 +3,38 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');/* ********************
 const { resolve, join } = require('path')
 const Jarvis = require('webpack-jarvis')
 const webpack = require('webpack');
+const fs = require('fs');
+const { appPackageJson } = require('./my-dev-utils');
+const apiMocker = require('webpack-api-mocker');
+const mocker = resolve(__dirname, '../src/client/mocks/index.js');
 
 module.exports = {
   devtool: 'eval-source-map',
   devServer: {
     compress: true,
-    port: '3000',
+    port: 3000,
+    proxy: {
+      '/': appPackageJson.proxy
+    },
+    before: (app, server) => {
+      apiMocker(app, mocker, {
+        changeHost: true
+      });
+    },
     contentBase: join(__dirname, '../dist'),
     hot: true,
-    open:true,
+    open: true,
     overlay: {
       errors: true,
       warnings: true
     },
-    disableHostCheck: true,
+    // disableHostCheck: true,
     publicPath: '/',
     historyApiFallback: true,
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
+    new webpack.NamedModulesPlugin(),
     new Jarvis({ port: 1337 }),
     new HtmlWebpackPlugin({
       filename: 'index.html',

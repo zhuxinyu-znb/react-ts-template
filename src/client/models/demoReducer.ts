@@ -1,14 +1,14 @@
-interface Istate {
-	stagecode: string;
+interface IReducer {
+  pageNumber: string;
+  pageSize: string;
 }
+
 interface Iaction {
 	type: string;
 	stagecode?:number;
 }
 
-
-
-export const pageReducer = (state: Istate, action: Iaction) => {
+export const pageReducer = (state: IReducer, action: Iaction) => {
   switch (action.type) {
   case "STAGE_DATA":
     return {

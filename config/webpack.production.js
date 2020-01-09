@@ -6,7 +6,6 @@ const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');/*
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;/* 打包后进行分析 */
 const { resolve } = require('path');
 
-
 module.exports = {
     optimization: {
         minimize: true,
@@ -98,7 +97,7 @@ module.exports = {
                 }
             }
         }),
-        /* new BundleAnalyzerPlugin(
+        new BundleAnalyzerPlugin(
             {
                 analyzerMode: 'server',
                 analyzerHost: '127.0.0.1',
@@ -111,6 +110,6 @@ module.exports = {
                 statsOptions: null,
                 logLevel: 'info'
             }
-        ), */
+        ),
     ]
 }
