@@ -156,7 +156,7 @@ const Axios = {
         }else{
             result=await instance.post(url,qs.stringify(param));
         }
-        if(result && result.data.code==='0'){
+        if(result && result.data.code==='1'){
             return result.data.data
         }else{
             try {

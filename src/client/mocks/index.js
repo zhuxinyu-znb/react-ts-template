@@ -1,6 +1,7 @@
 const mock = require('./demo/mock'); // 引入模块mock的接口
 const mock2 = require('./demo/mock2'); // 引入模块mock2的接口
 const map = require('./map/getOrgTask');
+const menu = require('./menu/menu');
 
 
 // 当接口模块和后端同时存在接口时，模拟的接口优先生效，实际
@@ -12,7 +13,8 @@ const proxy = config === 'dev'
     ? {
         ...mock,
         ...mock2,
-        ...map
+        ...map,
+        ...menu,
     }
     : {};
 module.exports = proxy;

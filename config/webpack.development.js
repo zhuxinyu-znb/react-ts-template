@@ -38,7 +38,7 @@ module.exports = {
     new Jarvis({ port: 1337 }),
     new HtmlWebpackPlugin({
       filename: 'index.html',
-      template: 'src/client/index-dev.html',
+      template: 'public/index-dev.html',
     }),
     new FriendlyErrorsWebpackPlugin({
       compilationSuccessInfo: {

@@ -66,7 +66,7 @@ module.exports = {
         new HtmlWebpackPlugin({
             title: 'CRM系统',
             filename: 'index.html',
-            template: resolve(__dirname, '../src/client/index-prod.html'),
+            template: resolve(__dirname, '../public/index-prod.html'),
             minify: {
                 minifyJS: true,
                 removeComments: true,

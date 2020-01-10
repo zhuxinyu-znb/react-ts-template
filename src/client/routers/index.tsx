@@ -27,6 +27,12 @@ const Demo = Loadable({
   delay: 300,
 });
 
+const Demo2 = Loadable({
+  loader: () => import(/* webpackChunkName: "demo" */ "@pages/demo2"),
+  loading: Loading,
+  delay: 300,
+});
+
 const routeConfig: JYDProps[] = [
   {
     key: 'login',
@@ -49,18 +55,23 @@ const routeConfig: JYDProps[] = [
   {
     key: 'demo',
     path: "/demo",
-    exact: true,
     component: Menu,
     children: [
       {
         key: 'demo1',
-        path:'/demo',
+        path:'/demo/demo1',
         component:Demo,
+        exact:true
+      },{
+        key: 'demo2',
+        path:'/demo/demo2',
+        component:Demo2,
         exact:true
       },
     ]
   },
 ];
+
 
 const generateRoutes = (routeConfig: JYDProps[]) => (
   <Suspense fallback={Loading}>

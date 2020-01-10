@@ -20,9 +20,9 @@ const Login = (routerProps: RouteComponentProps) => {
     password: ''
   })
 
-  useEffect(() => {
-    document.title = '系统登录'
-  }, [])
+  // useEffect(() => {
+  //   document.title = '系统登录'
+  // }, [])
   /* 
     const onInputChange = ({ target: { name, value } }) => setUser({ ...user, [name]: value })
   

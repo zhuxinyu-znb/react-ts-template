@@ -2,17 +2,61 @@ import * as React from 'react';
 import { Layout, Menu, Icon } from 'antd';
 import './menu.less';
 import logo from '@assets/images/logo.png';
+import { Axios } from '@utils/tool';
 
-const { useState } = React;
+const { useState, useEffect } = React;
 const { Header, Sider, Content, Footer } = Layout;
+const { SubMenu } = Menu;
+
+interface IMenu {
+  title: string;
+  id: string;
+  children?: IMenu[]
+}
 
 const NavMenu: React.FC = function (props) {
   const { children } = props;
   const [collapsed, setCollapsed] = useState(false);
+  const [menuData, setMenuData] = useState([]);
 
-  const toggle = () => {
+  // 创建导航选项
+  const createMenu = (arr: IMenu[]): React.FC[] => {
+    let list = [];
+    arr && arr.forEach((d, i) => {
+      if (d.children !== undefined) {
+        list.push(
+          <SubMenu
+            key={d.id}
+            title={d.title}
+          >
+            {createMenu(d.children)}
+          </SubMenu>)
+      } else {
+        list.push(
+          <Menu.Item key={d.id}>
+            <Icon type="user" />
+            <span>{d.title}</span>
+          </Menu.Item>
+        )
+      }
+    });
+    return list;
+  };
+
+  // 获取导航数据
+  const getDate = async (): Promise<any> => {
+    const data = await Axios.post('/getMenu');
+    setMenuData(data);
+  }
+
+  useEffect(() => {
+    getDate();
+  }, [])
+
+  const toggle = (): void => {
     setCollapsed(!collapsed);
   };
+
   return (
     <Layout className="layout-container">
       <Sider trigger={null} collapsible collapsed={collapsed}>
@@ -21,18 +65,7 @@ const NavMenu: React.FC = function (props) {
           <span>jyd</span>
         </div>
         <Menu theme="dark" mode="inline" defaultSelectedKeys={['1']}>
-          <Menu.Item key="1">
-            <Icon type="user" />
-            <span>nav 1</span>
-          </Menu.Item>
-          <Menu.Item key="2">
-            <Icon type="video-camera" />
-            <span>nav 2</span>
-          </Menu.Item>
-          <Menu.Item key="3">
-            <Icon type="upload" />
-            <span>nav 3</span>
-          </Menu.Item>
+          {createMenu(menuData)}
         </Menu>
       </Sider>
       <Layout>
@@ -62,5 +95,3 @@ const NavMenu: React.FC = function (props) {
 }
 
 export default NavMenu;
-
-
