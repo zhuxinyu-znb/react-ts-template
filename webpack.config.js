@@ -78,12 +78,13 @@ const webpackConfig = {
                 use: [
                     {
                         // loader:'happypack/loader?id=happy-babel-js'
-                        loader:_isDev ? 'babel-loader': 'happypack/loader?id=happy-babel-js'
+                        loader:_isDev ? 'babel-loader': 'happypack/loader?id=happy-babel-js',
                         /* options: {
                             plugins: _isDev ? ['dynamic-import-node'] : []
                         } */
                     },
-                    'eslint-loader']
+                    'eslint-loader'
+                    ]
             },
             {
                 test: /.svg$/,

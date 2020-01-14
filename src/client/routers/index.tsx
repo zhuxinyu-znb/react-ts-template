@@ -1,6 +1,7 @@
 import * as React from "react";
 import { Switch, Route, RouteProps, Redirect } from "react-router-dom";
 import Loadable from 'react-loadable';
+import AnimatedRouter from '@components/animation/AnimatedRouter';
 import Loading from "@components/Loading";
 import Login from "@pages/login";
 import NoMatch from "@components/NoMatch";
@@ -59,24 +60,42 @@ const routeConfig: JYDProps[] = [
     children: [
       {
         key: 'demo1',
-        path:'/demo/demo1',
-        component:Demo,
-        exact:true
-      },{
+        path: '/demo/demo1',
+        component: Demo,
+        exact: true
+      },
+      {
         key: 'demo2',
-        path:'/demo/demo2',
-        component:Demo2,
-        exact:true
+        path: '/demo/demo2',
+        component: Demo2,
+        exact: true
       },
     ]
   },
 ];
 
+// const Router = () => (
+//   <Suspense fallback={Loading}>
+//     <Switch>
+//       <Route path="/report" component={Report} />
+//       <Route  path="/demo" render={
+//         props => (
+//           <Menu>
+//             <Route path="/demo/demo1" component={Report} />
+//             <Route path="/demo/demo2" component={NoMatch} />
+//           </Menu>
+//         )
+//       }
+//       />
+//       <Route component={NoMatch} />
+//     </Switch>
+//   </Suspense>
+// );
 
 const generateRoutes = (routeConfig: JYDProps[]) => (
   <Suspense fallback={Loading}>
     <Switch>
-      <Route path="/" exact render={() => <Redirect to="/login" />} key="/home" />,
+      <Route path="/" exact render={() => <Redirect to="/login" />} key="/home" />
       {
         routeConfig.map((r, i: number) => {
           const { path, component, exact, key } = r;
@@ -84,27 +103,23 @@ const generateRoutes = (routeConfig: JYDProps[]) => (
           return (
             <Route
               key={key}
-              exact={exact}
               path={path}
+              exact={exact}
               render={props => {
                 if (!r.children || !r.children.length) return <LazyCom {...props} />
                 return (
                   <LazyCom {...props}>
-                    <Switch>
-                      {
-                        r.children.map(child => {
-                          const { key, path, exact, component } = child
-                          const ChildCMP = component
-                          return <Route
-                            key={key}
-                            path={path}
-                            exact={exact}
-                            render={props => <ChildCMP {...props} />}
-                          />
-                        })
-                      }
-                      <Redirect to={r.children[0].path}/>
-                    </Switch>
+                    {
+                      r.children.map(child => {
+                        const { key, path, exact, component } = child
+                        const ChildCMP = component
+                        return <Route
+                          key={key}
+                          path={path}
+                          render={props => <ChildCMP {...props} />}
+                        />
+                      })
+                    }
                   </LazyCom>
                 )
               }

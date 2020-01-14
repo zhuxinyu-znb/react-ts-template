@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { Layout, Menu, Icon } from 'antd';
 import './menu.less';
+import {Link} from 'react-router-dom';
 import logo from '@assets/images/logo.png';
 import { Axios } from '@utils/tool';
 
@@ -11,6 +12,7 @@ const { SubMenu } = Menu;
 interface IMenu {
   title: string;
   id: string;
+  path?:'';
   children?: IMenu[]
 }
 
@@ -35,7 +37,7 @@ const NavMenu: React.FC = function (props) {
         list.push(
           <Menu.Item key={d.id}>
             <Icon type="user" />
-            <span>{d.title}</span>
+            <span><Link to={d.path}>{d.title}123</Link></span>
           </Menu.Item>
         )
       }

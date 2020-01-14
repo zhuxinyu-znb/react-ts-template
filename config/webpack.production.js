@@ -97,7 +97,7 @@ module.exports = {
                 }
             }
         }),
-        new BundleAnalyzerPlugin(
+        /* new BundleAnalyzerPlugin(
             {
                 analyzerMode: 'server',
                 analyzerHost: '127.0.0.1',
@@ -110,6 +110,6 @@ module.exports = {
                 statsOptions: null,
                 logLevel: 'info'
             }
-        ),
+        ), */
     ]
 }

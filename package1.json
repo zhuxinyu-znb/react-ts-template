@@ -6,7 +6,8 @@
   "scripts": {
     "client:dev": "scripty",
     "client:prod": "scripty",
-    "server:start": "scripty"
+    "start": "npm run client:dev",
+    "build": "npm run client:prod"
   },
   "repository": {
     "type": "git",

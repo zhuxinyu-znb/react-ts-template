@@ -1,6 +1,6 @@
 module.exports = {
     development: {
-        publicPath: '',
+        publicPath: '/',
     }, 
     production: {
         publicPath: './'
