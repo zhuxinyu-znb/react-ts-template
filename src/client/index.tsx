@@ -1,5 +1,7 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
+import 'react-app-polyfill/ie9';
+import 'react-app-polyfill/stable';
 import Router from "./routers";
 import "@assets/styles/common.css";
 import { BrowserRouter } from "react-router-dom";
