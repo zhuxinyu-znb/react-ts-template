@@ -101,6 +101,6 @@
     "webpack-manifest-plugin": "^2.2.0",
     "webpack-merge": "^4.2.2",
     "webpack-parallel-uglify-plugin": "^1.1.2",
-    "yargs-parser": "^16.1.0"
+    "yargs-parser": "^13.1.2"
   }
 }
